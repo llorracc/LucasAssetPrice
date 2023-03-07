@@ -1,3 +1,63 @@
+htfcss: cmtt font-family: monospace,monospace;
+htfcss: ecbx  font-weight: bold;
+htfcss: ecsx  font-weight: bold;
+htfcss: ecbi  font-weight: bold;   font-style: italic;
+htfcss: ecit  font-style: italic; font-family: monospace,monospace;
+htfcss: ecss  font-family: sans-serif;
+htfcss: ecff  font-family: fantasy;
+htfcss: ecti  font-style: italic;
+htfcss: ectt  font-family: monospace,monospace;
+htfcss: cmmi font-style: italic;
+htfcss: cmmib font-style: italic; font-weight: bold;
+htfcss: cmbx  font-weight: bold;
+htfcss: cmbxsl  font-weight: bold; font-style: oblique;
+htfcss: cmbx  font-weight: bold;
+htfcss: cmbxsl  font-weight: bold; font-style: oblique;
+htfcss: cmss   font-family: sans-serif;
+htfcss: cmssbx  font-family: sans-serif; font-weight: bold;
+htfcss: cmssbxo  font-family: sans-serif; font-style: oblique; font-weight: bold;
+htfcss: cmssdc  font-family: sans-serif;
+htfcss: cmssi  font-family: sans-serif; font-style: oblique;
+htfcss: ecbx  font-weight: bold;
+htfcss: ecsx  font-weight: bold;
+htfcss: ecbi  font-weight: bold;   font-style: italic;
+htfcss: ecit  font-style: italic; font-family: monospace,monospace;
+htfcss: ecss  font-family: sans-serif;
+htfcss: ecff  font-family: fantasy;
+htfcss: ecti  font-style: italic;
+htfcss: ectt  font-family: monospace,monospace;
+htfcss: ecbx  font-weight: bold;
+htfcss: ecsx  font-weight: bold;
+htfcss: ecbi  font-weight: bold;   font-style: italic;
+htfcss: ecit  font-style: italic; font-family: monospace,monospace;
+htfcss: ecss  font-family: sans-serif;
+htfcss: ecff  font-family: fantasy;
+htfcss: ecti  font-style: italic;
+htfcss: ectt  font-family: monospace,monospace;
+htfcss: ecbx  font-weight: bold;
+htfcss: ecsx  font-weight: bold;
+htfcss: ecbi  font-weight: bold;   font-style: italic;
+htfcss: ecit  font-style: italic; font-family: monospace,monospace;
+htfcss: ecss  font-family: sans-serif;
+htfcss: ecff  font-family: fantasy;
+htfcss: ecti  font-style: italic;
+htfcss: ectt  font-family: monospace,monospace;
+htfcss: ecbx  font-weight: bold;
+htfcss: ecsx  font-weight: bold;
+htfcss: ecbi  font-weight: bold;   font-style: italic;
+htfcss: ecit  font-style: italic; font-family: monospace,monospace;
+htfcss: ecss  font-family: sans-serif;
+htfcss: ecff  font-family: fantasy;
+htfcss: ecti  font-style: italic;
+htfcss: ectt  font-family: monospace,monospace;
+htfcss: ecbx  font-weight: bold;
+htfcss: ecsx  font-weight: bold;
+htfcss: ecbi  font-weight: bold;   font-style: italic;
+htfcss: ecit  font-style: italic; font-family: monospace,monospace;
+htfcss: ecss  font-family: sans-serif;
+htfcss: ecff  font-family: fantasy;
+htfcss: ecti  font-style: italic;
+htfcss: ectt  font-family: monospace,monospace;
 htfcss: ecbx  font-weight: bold;
 htfcss: ecsx  font-weight: bold;
 htfcss: ecbi  font-weight: bold;   font-style: italic;
@@ -33,6 +93,14 @@ htfcss: ectt  font-family: monospace,monospace;
 File: LucasAssetPrice.html
 File: LucasAssetPrice.css
 File: LucasAssetPrice.tmp
+File: LucasAssetPrice2.html
+File: LucasAssetPrice3.html
+File: LucasAssetPrice4.html
+File: LucasAssetPrice5.html
+File: LucasAssetPrice6.html
+File: LucasAssetPrice7.html
+File: LucasAssetPrice8.html
+File: LucasAssetPrice9.html
 Css: p{margin-top:0;margin-bottom:0}
 Css: p.indent{text-indent:0;}
 Css: p + p{margin-top:1em;}
@@ -211,9 +279,186 @@ Css: .subfigure img{display:block; margin-left:auto; margin-right:auto}
 Css: .equation td{text-align:center; }
 Css: td.equation { margin-top:5em; margin-bottom:5em; }
 --- needs --- LucasAssetPrice.idv[2] ==> LucasAssetPrice0x.svg ---
+--- needs --- LucasAssetPrice.idv[4] ==> LucasAssetPrice1x.svg ---
+--- needs --- LucasAssetPrice.idv[5] ==> LucasAssetPrice2x.svg ---
+--- needs --- LucasAssetPrice.idv[7] ==> LucasAssetPrice3x.svg ---
+--- needs --- LucasAssetPrice.idv[8] ==> LucasAssetPrice4x.svg ---
+--- needs --- LucasAssetPrice.idv[9] ==> LucasAssetPrice5x.svg ---
+--- needs --- LucasAssetPrice.idv[10] ==> LucasAssetPrice6x.svg ---
+--- needs --- LucasAssetPrice.idv[11] ==> LucasAssetPrice7x.svg ---
+--- needs --- LucasAssetPrice.idv[13] ==> LucasAssetPrice8x.svg ---
+--- needs --- LucasAssetPrice.idv[14] ==> LucasAssetPrice9x.svg ---
+--- needs --- LucasAssetPrice.idv[15] ==> LucasAssetPrice10x.svg ---
+--- needs --- LucasAssetPrice.idv[17] ==> LucasAssetPrice11x.svg ---
+--- needs --- LucasAssetPrice.idv[18] ==> LucasAssetPrice12x.svg ---
+--- needs --- LucasAssetPrice.idv[19] ==> LucasAssetPrice13x.svg ---
+--- needs --- LucasAssetPrice.idv[20] ==> LucasAssetPrice14x.svg ---
+--- needs --- LucasAssetPrice.idv[21] ==> LucasAssetPrice15x.svg ---
+--- needs --- LucasAssetPrice.idv[22] ==> LucasAssetPrice16x.svg ---
+--- needs --- LucasAssetPrice.idv[23] ==> LucasAssetPrice17x.svg ---
+--- needs --- LucasAssetPrice.idv[24] ==> LucasAssetPrice18x.svg ---
+--- needs --- LucasAssetPrice.idv[25] ==> LucasAssetPrice19x.svg ---
+--- needs --- LucasAssetPrice.idv[27] ==> LucasAssetPrice20x.svg ---
+--- needs --- LucasAssetPrice.idv[29] ==> LucasAssetPrice21x.svg ---
+--- needs --- LucasAssetPrice.idv[30] ==> LucasAssetPrice22x.svg ---
+--- needs --- LucasAssetPrice.idv[32] ==> LucasAssetPrice23x.svg ---
+--- needs --- LucasAssetPrice.idv[33] ==> LucasAssetPrice24x.svg ---
+--- needs --- LucasAssetPrice.idv[35] ==> LucasAssetPrice25x.svg ---
+--- needs --- LucasAssetPrice.idv[37] ==> LucasAssetPrice26x.svg ---
+--- needs --- LucasAssetPrice.idv[38] ==> LucasAssetPrice27x.svg ---
+--- needs --- LucasAssetPrice.idv[39] ==> LucasAssetPrice28x.svg ---
+--- needs --- LucasAssetPrice.idv[41] ==> LucasAssetPrice29x.svg ---
+--- needs --- LucasAssetPrice.idv[42] ==> LucasAssetPrice30x.svg ---
+--- needs --- LucasAssetPrice.idv[44] ==> LucasAssetPrice31x.svg ---
+--- needs --- LucasAssetPrice.idv[45] ==> LucasAssetPrice32x.svg ---
+--- needs --- LucasAssetPrice.idv[47] ==> LucasAssetPrice33x.svg ---
+--- needs --- LucasAssetPrice.idv[48] ==> LucasAssetPrice34x.svg ---
+--- needs --- LucasAssetPrice.idv[49] ==> LucasAssetPrice35x.svg ---
+--- needs --- LucasAssetPrice.idv[51] ==> LucasAssetPrice36x.svg ---
+--- needs --- LucasAssetPrice.idv[52] ==> LucasAssetPrice37x.svg ---
+--- needs --- LucasAssetPrice.idv[53] ==> LucasAssetPrice38x.svg ---
+--- needs --- LucasAssetPrice.idv[54] ==> LucasAssetPrice39x.svg ---
+--- needs --- LucasAssetPrice.idv[55] ==> LucasAssetPrice40x.svg ---
+--- needs --- LucasAssetPrice.idv[56] ==> LucasAssetPrice41x.svg ---
+--- needs --- LucasAssetPrice.idv[57] ==> LucasAssetPrice42x.svg ---
+--- needs --- LucasAssetPrice.idv[59] ==> LucasAssetPrice43x.svg ---
+--- needs --- LucasAssetPrice.idv[61] ==> LucasAssetPrice44x.svg ---
+--- needs --- LucasAssetPrice.idv[62] ==> LucasAssetPrice45x.svg ---
+--- needs --- LucasAssetPrice.idv[63] ==> LucasAssetPrice46x.svg ---
+--- needs --- LucasAssetPrice.idv[64] ==> LucasAssetPrice47x.svg ---
+--- needs --- LucasAssetPrice.idv[65] ==> LucasAssetPrice48x.svg ---
+--- needs --- LucasAssetPrice.idv[66] ==> LucasAssetPrice49x.svg ---
+--- needs --- LucasAssetPrice.idv[67] ==> LucasAssetPrice50x.svg ---
+--- needs --- LucasAssetPrice.idv[69] ==> LucasAssetPrice51x.svg ---
+--- needs --- LucasAssetPrice.idv[70] ==> LucasAssetPrice52x.svg ---
+--- needs --- LucasAssetPrice.idv[71] ==> LucasAssetPrice53x.svg ---
+--- needs --- LucasAssetPrice.idv[73] ==> LucasAssetPrice54x.svg ---
+--- needs --- LucasAssetPrice.idv[75] ==> LucasAssetPrice55x.svg ---
+--- needs --- LucasAssetPrice.idv[76] ==> LucasAssetPrice56x.svg ---
+--- needs --- LucasAssetPrice.idv[78] ==> LucasAssetPrice57x.svg ---
+--- needs --- LucasAssetPrice.idv[80] ==> LucasAssetPrice58x.svg ---
+--- needs --- LucasAssetPrice.idv[81] ==> LucasAssetPrice59x.svg ---
+--- needs --- LucasAssetPrice.idv[82] ==> LucasAssetPrice60x.svg ---
+--- needs --- LucasAssetPrice.idv[84] ==> LucasAssetPrice61x.svg ---
+--- needs --- LucasAssetPrice.idv[85] ==> LucasAssetPrice62x.svg ---
+--- needs --- LucasAssetPrice.idv[87] ==> LucasAssetPrice63x.svg ---
+--- needs --- LucasAssetPrice.idv[89] ==> LucasAssetPrice64x.svg ---
+--- needs --- LucasAssetPrice.idv[90] ==> LucasAssetPrice65x.svg ---
+--- needs --- LucasAssetPrice.idv[91] ==> LucasAssetPrice66x.svg ---
+--- needs --- LucasAssetPrice.idv[92] ==> LucasAssetPrice67x.svg ---
+--- needs --- LucasAssetPrice.idv[94] ==> LucasAssetPrice68x.svg ---
+--- needs --- LucasAssetPrice.idv[95] ==> LucasAssetPrice69x.svg ---
+--- needs --- LucasAssetPrice.idv[96] ==> LucasAssetPrice70x.svg ---
+--- needs --- LucasAssetPrice.idv[97] ==> LucasAssetPrice71x.svg ---
+--- needs --- LucasAssetPrice.idv[99] ==> LucasAssetPrice72x.svg ---
+--- needs --- LucasAssetPrice.idv[100] ==> LucasAssetPrice73x.svg ---
+--- needs --- LucasAssetPrice.idv[102] ==> LucasAssetPrice74x.svg ---
+--- needs --- LucasAssetPrice.idv[104] ==> LucasAssetPrice75x.svg ---
+--- needs --- LucasAssetPrice.idv[106] ==> LucasAssetPrice76x.svg ---
+--- needs --- LucasAssetPrice.idv[107] ==> LucasAssetPrice77x.svg ---
+--- needs --- LucasAssetPrice.idv[108] ==> LucasAssetPrice78x.svg ---
+--- needs --- LucasAssetPrice.idv[109] ==> LucasAssetPrice79x.svg ---
+--- needs --- LucasAssetPrice.idv[111] ==> LucasAssetPrice80x.svg ---
+--- needs --- LucasAssetPrice.idv[112] ==> LucasAssetPrice81x.svg ---
+--- needs --- LucasAssetPrice.idv[114] ==> LucasAssetPrice82x.svg ---
+--- needs --- LucasAssetPrice.idv[116] ==> LucasAssetPrice83x.svg ---
+--- needs --- LucasAssetPrice.idv[117] ==> LucasAssetPrice84x.svg ---
+--- needs --- LucasAssetPrice.idv[118] ==> LucasAssetPrice85x.svg ---
+--- needs --- LucasAssetPrice.idv[119] ==> LucasAssetPrice86x.svg ---
+--- needs --- LucasAssetPrice.idv[120] ==> LucasAssetPrice87x.svg ---
+--- needs --- LucasAssetPrice.idv[121] ==> LucasAssetPrice88x.svg ---
+--- needs --- LucasAssetPrice.idv[123] ==> LucasAssetPrice89x.svg ---
+--- needs --- LucasAssetPrice.idv[125] ==> LucasAssetPrice90x.svg ---
+--- needs --- LucasAssetPrice.idv[126] ==> LucasAssetPrice91x.svg ---
+--- needs --- LucasAssetPrice.idv[127] ==> LucasAssetPrice92x.svg ---
+--- needs --- LucasAssetPrice.idv[129] ==> LucasAssetPrice93x.svg ---
+--- needs --- LucasAssetPrice.idv[131] ==> LucasAssetPrice94x.svg ---
+--- needs --- LucasAssetPrice.idv[133] ==> LucasAssetPrice95x.svg ---
+--- needs --- LucasAssetPrice.idv[134] ==> LucasAssetPrice96x.svg ---
+--- needs --- LucasAssetPrice.idv[135] ==> LucasAssetPrice97x.svg ---
+--- needs --- LucasAssetPrice.idv[136] ==> LucasAssetPrice98x.svg ---
+--- needs --- LucasAssetPrice.idv[138] ==> LucasAssetPrice99x.svg ---
+--- needs --- LucasAssetPrice.idv[140] ==> LucasAssetPrice100x.svg ---
+--- needs --- LucasAssetPrice.idv[141] ==> LucasAssetPrice101x.svg ---
+--- needs --- LucasAssetPrice.idv[143] ==> LucasAssetPrice102x.svg ---
+--- needs --- LucasAssetPrice.idv[145] ==> LucasAssetPrice103x.svg ---
+--- needs --- LucasAssetPrice.idv[147] ==> LucasAssetPrice104x.svg ---
+--- needs --- LucasAssetPrice.idv[148] ==> LucasAssetPrice105x.svg ---
+--- needs --- LucasAssetPrice.idv[150] ==> LucasAssetPrice106x.svg ---
+--- needs --- LucasAssetPrice.idv[152] ==> LucasAssetPrice107x.svg ---
+--- needs --- LucasAssetPrice.idv[153] ==> LucasAssetPrice108x.svg ---
+--- needs --- LucasAssetPrice.idv[154] ==> LucasAssetPrice109x.svg ---
+--- needs --- LucasAssetPrice.idv[156] ==> LucasAssetPrice110x.svg ---
+--- needs --- LucasAssetPrice.idv[158] ==> LucasAssetPrice111x.svg ---
+--- needs --- LucasAssetPrice.idv[159] ==> LucasAssetPrice112x.svg ---
+--- needs --- LucasAssetPrice.idv[160] ==> LucasAssetPrice113x.svg ---
+--- needs --- LucasAssetPrice.idv[161] ==> LucasAssetPrice114x.svg ---
+--- needs --- LucasAssetPrice.idv[162] ==> LucasAssetPrice115x.svg ---
+--- needs --- LucasAssetPrice.idv[163] ==> LucasAssetPrice116x.svg ---
+--- needs --- LucasAssetPrice.idv[165] ==> LucasAssetPrice117x.svg ---
+--- needs --- LucasAssetPrice.idv[166] ==> LucasAssetPrice118x.svg ---
+--- needs --- LucasAssetPrice.idv[167] ==> LucasAssetPrice119x.svg ---
+--- needs --- LucasAssetPrice.idv[168] ==> LucasAssetPrice120x.svg ---
+--- needs --- LucasAssetPrice.idv[169] ==> LucasAssetPrice121x.svg ---
+--- needs --- LucasAssetPrice.idv[171] ==> LucasAssetPrice122x.svg ---
+--- needs --- LucasAssetPrice.idv[173] ==> LucasAssetPrice123x.svg ---
+--- needs --- LucasAssetPrice.idv[175] ==> LucasAssetPrice124x.svg ---
+--- needs --- LucasAssetPrice.idv[177] ==> LucasAssetPrice125x.svg ---
+--- needs --- LucasAssetPrice.idv[179] ==> LucasAssetPrice126x.svg ---
+--- needs --- LucasAssetPrice.idv[180] ==> LucasAssetPrice127x.svg ---
+--- needs --- LucasAssetPrice.idv[181] ==> LucasAssetPrice128x.svg ---
+--- needs --- LucasAssetPrice.idv[182] ==> LucasAssetPrice129x.svg ---
+--- needs --- LucasAssetPrice.idv[183] ==> LucasAssetPrice130x.svg ---
+--- needs --- LucasAssetPrice.idv[184] ==> LucasAssetPrice131x.svg ---
+--- needs --- LucasAssetPrice.idv[186] ==> LucasAssetPrice132x.svg ---
+--- needs --- LucasAssetPrice.idv[187] ==> LucasAssetPrice133x.svg ---
+--- needs --- LucasAssetPrice.idv[188] ==> LucasAssetPrice134x.svg ---
+--- needs --- LucasAssetPrice.idv[190] ==> LucasAssetPrice135x.svg ---
+--- needs --- LucasAssetPrice.idv[191] ==> LucasAssetPrice136x.svg ---
+--- needs --- LucasAssetPrice.idv[192] ==> LucasAssetPrice137x.svg ---
+--- needs --- LucasAssetPrice.idv[193] ==> LucasAssetPrice138x.svg ---
+--- needs --- LucasAssetPrice.idv[195] ==> LucasAssetPrice139x.svg ---
+--- needs --- LucasAssetPrice.idv[196] ==> LucasAssetPrice140x.svg ---
+--- needs --- LucasAssetPrice.idv[197] ==> LucasAssetPrice141x.svg ---
+--- needs --- LucasAssetPrice.idv[198] ==> LucasAssetPrice142x.svg ---
+--- needs --- LucasAssetPrice.idv[199] ==> LucasAssetPrice143x.svg ---
+--- needs --- LucasAssetPrice.idv[201] ==> LucasAssetPrice144x.svg ---
+--- needs --- LucasAssetPrice.idv[203] ==> LucasAssetPrice145x.svg ---
+--- needs --- LucasAssetPrice.idv[204] ==> LucasAssetPrice146x.svg ---
+--- needs --- LucasAssetPrice.idv[206] ==> LucasAssetPrice147x.svg ---
+--- needs --- LucasAssetPrice.idv[207] ==> LucasAssetPrice148x.svg ---
+--- needs --- LucasAssetPrice.idv[208] ==> LucasAssetPrice149x.svg ---
+--- needs --- LucasAssetPrice.idv[209] ==> LucasAssetPrice150x.svg ---
+--- needs --- LucasAssetPrice.idv[211] ==> LucasAssetPrice151x.svg ---
+--- needs --- LucasAssetPrice.idv[212] ==> LucasAssetPrice152x.svg ---
+--- needs --- LucasAssetPrice.idv[213] ==> LucasAssetPrice153x.svg ---
+--- needs --- LucasAssetPrice.idv[214] ==> LucasAssetPrice154x.svg ---
 --- characters ---
+Font("cmr","7","7","100")
+Font("cmr","10","10","100")
+Font("cmmi","7","7","100")
+Font("cmmi","10","10","100")
+Font("cmsy","7","7","100")
+Font("cmsy","10","10","100")
 Font("ecrm","1200","12","100")
 Font("ecrm","0600","6","100")
 Font("tcrm","0500","5","100")
 Font("ecrm","1440","14","100")
 Font("ecrm","2074","20","100")
+Font("ecrm","1728","17","100")
+Font("ectt","1440","14","100")
+Font("ecrm","1000","10","100")
+Font("ectt","1000","10","100")
+Font("cmr","12","12","120")
+Font("cmmi","12","12","120")
+Font("cmsy","10","10","144")
+Font("cmex","10","10","144")
+Font("msam","10","10","144")
+Font("msbm","10","10","144")
+Font("ecti","1440","14","100")
+Font("cmss","12","12","120")
+Font("cmbx","12","12","120")
+Font("cmbx","10","10","100")
+Font("cmmib","10","10","144")
+Font("ecti","1000","10","100")
+Font("cmtt","12","12","120")

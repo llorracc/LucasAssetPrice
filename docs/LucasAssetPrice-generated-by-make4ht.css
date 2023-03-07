@@ -1,9 +1,70 @@
  
 /* start css.sty */
+.cmr-7{font-size:58%;}
+.cmr-10{font-size:83%;}
+.cmmi-7{font-size:58%;font-style: italic;}
+.cmmi-10{font-size:83%;font-style: italic;}
+.cmsy-7{font-size:58%;}
+.cmsy-10{font-size:83%;}
 .ecrm-0600{font-size:50%;}
 .tcrm-0500{font-size:41%;}
 .ecrm-1440{font-size:116%;}
 .ecrm-2074{font-size:166%;}
+.ecrm-1728{font-size:141%;}
+.ectt-1440{font-size:116%; font-family: monospace,monospace;}
+.ectt-1440{ font-family: monospace,monospace;}
+.ectt-1440{ font-family: monospace,monospace;}
+.ectt-1440{ font-family: monospace,monospace;}
+.ectt-1440{ font-family: monospace,monospace;}
+.ectt-1440{ font-family: monospace,monospace;}
+.ectt-1440{ font-family: monospace,monospace;}
+.ectt-1440{ font-family: monospace,monospace;}
+.ectt-1440{ font-family: monospace,monospace;}
+.ectt-1440{ font-family: monospace,monospace;}
+.ecrm-1000{font-size:83%;}
+.ectt-1000{font-size:83%; font-family: monospace,monospace;}
+.ectt-1000{ font-family: monospace,monospace;}
+.ectt-1000{ font-family: monospace,monospace;}
+.ectt-1000{ font-family: monospace,monospace;}
+.ectt-1000{ font-family: monospace,monospace;}
+.ectt-1000{ font-family: monospace,monospace;}
+.ectt-1000{ font-family: monospace,monospace;}
+.ectt-1000{ font-family: monospace,monospace;}
+.ectt-1000{ font-family: monospace,monospace;}
+.ectt-1000{ font-family: monospace,monospace;}
+.cmr-12x-x-120{font-size:120%;}
+.cmmi-12x-x-120{font-size:120%;font-style: italic;}
+.cmsy-10x-x-144{font-size:120%;}
+.cmex-10x-x-144{font-size:120%;}
+.msam-10x-x-144{font-size:120%;}
+.msbm-10x-x-144{font-size:120%;}
+.ecti-1440{font-size:116%; font-style: italic;}
+.ecti-1440{ font-style: italic;}
+.ecti-1440{ font-style: italic;}
+.ecti-1440{ font-style: italic;}
+.ecti-1440{ font-style: italic;}
+.ecti-1440{ font-style: italic;}
+.ecti-1440{ font-style: italic;}
+.ecti-1440{ font-style: italic;}
+.ecti-1440{ font-style: italic;}
+.ecti-1440{ font-style: italic;}
+.cmss-12x-x-120{font-size:120%;  font-family: sans-serif;}
+.cmbx-12x-x-120{font-size:120%; font-weight: bold;}
+.cmbx-12x-x-120{ font-weight: bold;}
+.cmbx-10{font-size:83%; font-weight: bold;}
+.cmbx-10{ font-weight: bold;}
+.cmmib-10x-x-144{font-size:120%;font-style: italic; font-weight: bold;}
+.ecti-1000{font-size:83%; font-style: italic;}
+.ecti-1000{ font-style: italic;}
+.ecti-1000{ font-style: italic;}
+.ecti-1000{ font-style: italic;}
+.ecti-1000{ font-style: italic;}
+.ecti-1000{ font-style: italic;}
+.ecti-1000{ font-style: italic;}
+.ecti-1000{ font-style: italic;}
+.ecti-1000{ font-style: italic;}
+.ecti-1000{ font-style: italic;}
+.cmtt-12x-x-120{font-size:120%;font-family: monospace,monospace;}
 p{margin-top:0;margin-bottom:0}
 p.indent{text-indent:0;}
 p + p{margin-top:1em;}

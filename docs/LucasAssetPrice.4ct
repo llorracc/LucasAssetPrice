@@ -1,3 +1,14 @@
 \expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi 
 \doTocEntry\tocsection{1}{\csname a:TocLink\endcsname{1}{x1-10001}{QQ2-1-1}{Introduction/Setup}}{1}\relax 
+\doTocEntry\tocsection{2}{\csname a:TocLink\endcsname{1}{x1-20002}{QQ2-1-2}{The Market for Trees}}{2}\relax 
+\doTocEntry\tocsection{3}{\csname a:TocLink\endcsname{1}{x1-30003}{QQ2-1-3}{The Problem of an Individual Consumer}}{3}\relax 
+\doTocEntry\tocsection{4}{\csname a:TocLink\endcsname{1}{x1-40004}{QQ2-1-4}{Aggregation}}{5}\relax 
+\doTocEntry\tocsection{5}{\csname a:TocLink\endcsname{1}{x1-50005}{QQ2-1-5}{Specializing the Model}}{9}\relax 
+\doTocEntry\tocsection{6}{\csname a:TocLink\endcsname{1}{x1-60006}{QQ2-1-6}{The `Rate of Return' in a Lucas Model}}{12}\relax 
+\doTocEntry\tocsection{7}{\csname a:TocLink\endcsname{1}{x1-70007}{QQ2-1-7}{Aggregate Returns Versus Individual Returns}}{14}\relax 
+\doTocEntry\tocsection{8}{\csname a:TocLink\endcsname{1}{x1-80008}{QQ2-1-8}{A Surprise}}{15}\relax 
+\doTocEntry\tocsection{9}{\csname a:TocLink\endcsname{1}{x1-90009}{QQ2-1-9}{Analytical and Numerical Solutions}}{17}\relax 
+\doTocEntry\tocsection{A}{\csname a:TocLink\endcsname{1}{x1-10000A}{QQ2-1-10}{When Dividends are IID}}{18}\relax 
+\doTocEntry\tocsection{B}{\csname a:TocLink\endcsname{1}{x1-11000B}{QQ2-1-11}{When Dividends Follow a Random Walk}}{22}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-12000B}{QQ2-1-12}{References}}{27}\relax 
 \par 

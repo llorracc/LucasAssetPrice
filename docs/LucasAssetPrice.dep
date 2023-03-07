@@ -76,7 +76,7 @@
   *{package}{manyfoot}    {2019/08/03 v1.11}
   *{package}{nccfoots}    {2005/02/03 v1.2}
   *{package}{tex4ht}      {0000/00/00 v0.0}
-  *{package}{econark}     {0000/00/00 v0.0}
+  *{package}{./Resources/texmf-local/tex/latex/econark}{0000/00/00 v0.0}
   *{package}{subfiles}    {2020/11/14 v2.2}
   *{package}{import}      {2020/04/01 v6.2}
   *{package}{./Resources/texmf-local/tex/latex/handoutShortcuts}{0000/00/00 v0.0}
@@ -187,4 +187,16 @@
   *{file}   {uwasy.fd}    {2020/01/19 v2.4}
   *{file}   {t1cmtt.fd}   {2019/12/16 v2.5j}
   *{file}   {t1cmtt.fd}   {2019/12/16 v2.5j}
+  *{file}   {./Equations/LAP_pofci.tex}{0000/00/00 v0.0}
+  *{file}   {./Equations/LAP_pofd.tex}{0000/00/00 v0.0}
+  *{file}   {./Equations/LAP_StochDiscFact.tex}{0000/00/00 v0.0}
+  *{file}   {./Equations/LAP_PtsubPtp1.tex}{0000/00/00 v0.0}
+  *{file}   {./Equations/LAP_PtAsPDV.tex}{0000/00/00 v0.0}
+  *{file}   {./Equations/LAP_pofdCRRA.tex}{0000/00/00 v0.0}
+  *{file}   {./Equations/LAP_pofdLog.tex}{0000/00/00 v0.0}
+  *{file}   {./Equations/LAP_pWithLogU.tex}{0000/00/00 v0.0}
+  *{file}   {./Equations/LAP_PtLogIID.tex}{0000/00/00 v0.0}
+  *{file}   {./Equations/LAP_pofdCRRAWdvdndGro.tex}{0000/00/00 v0.0}
+  *{file}   {./Equations/LAP_pofdCRRAIsConst.tex}{0000/00/00 v0.0}
+  *{file}   {LucasAssetPrice.bbl}{0000/00/00 v0.0}
 }
