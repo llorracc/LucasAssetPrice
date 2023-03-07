@@ -10,6 +10,7 @@
 \providecommand{\econtexBib}{economics}
 \providecommand{\handout}{\econtexRoot/Resources/texmf-local/tex/latex/handout}
 \providecommand{\handoutSetup}{\econtexRoot/Resources/texmf-local/tex/latex/handoutSetup}
+\providecommand{\handoutSetup}    {\econtexRoot/Resources/texmf-local/tex/latex/handoutSetup}
 \providecommand{\handoutShortcuts}{\econtexRoot/Resources/texmf-local/tex/latex/handoutShortcuts}
 \providecommand{\handoutBibMake}{\econtexRoot/Resources/texmf-local/tex/latex/handoutBibMake}
 \providecommand{\handoutBibStyle}{\econtexRoot/Resources/texmf-local/bibtex/bst/handout}
