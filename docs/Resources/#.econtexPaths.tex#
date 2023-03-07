@@ -1,0 +1,25 @@
+% -*- mode: LaTeX; TeX-PDF-mode: t; -*- # Tell emacs the file type (for syntax coloring)
+% Paths to locations of project-specific files
+\providecommand{\packages}{}\renewcommand{\packages}{\econtexRoot/Resources/texmf-local/tex/latex}
+\providecommand{\classes}{}\renewcommand{\classes}{\econtexRoot/Resources/texmf-local/tex/latex}
+\providecommand{\econark}{\econtexRoot/Resources/texmf-local/tex/latex/econark}
+\providecommand{\econtexSetup}{\econtexRoot/Resources/texmf-local/tex/latex/econtexSetup}
+\providecommand{\econtexShortcuts}{\econtexRoot/Resources/texmf-local/tex/latex/econtexShortcuts}
+\providecommand{\econtexBibMake}{\econtexRoot/Resources/texmf-local/tex/latex/econtexBibMake}
+\providecommand{\econtexBibStyle}{\econtexRoot/Resources/texmf-local/bibtex/bst/econtex}
+\providecommand{\econtexBib}{economics}
+\providecommand{\handout}{\econtexRoot/Resources/texmf-local/tex/latex/handout}
+\providecommand{\handoutSetup}{\econtexRoot/Resources/texmf-local/tex/latex/handoutSetup}
+\providecommand{\handoutSetup}    {\econtexRoot/Resources/texmf-local/tex/latex/handoutSetup}
+\providecommand{\handoutShortcuts}{\econtexRoot/Resources/texmf-local/tex/latex/handoutShortcuts}
+\providecommand{\handoutBibMake}{\econtexRoot/Resources/texmf-local/tex/latex/handoutBibMake}
+\providecommand{\handoutBibStyle}{\econtexRoot/Resources/texmf-local/bibtex/bst/handout}
+
+\providecommand{\FigDir}{\econtexRoot/Figures}
+\providecommand{\CodeDir}{\econtexRoot/Code}
+\providecommand{\DataDir}{\econtexRoot/Data}
+\providecommand{\SlideDir}{\econtexRoot/Slides}
+\providecommand{\TableDir}{\econtexRoot/Tables}
+\providecommand{\ApndxDir}{\econtexRoot/Appendices}
+\providecommand{\EqDir}{\econtexRoot/Equations} 
+\providecommand{\LaTeXInputs}{\econtexRoot/Resources/LaTeXInputs}

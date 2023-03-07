@@ -1,0 +1,506 @@
+\input{./.econtexRoot}\documentclass{\handout}
+\usepackage{econark}
+\usepackage{\handoutShortcuts}\usepackage{\handoutSetup}
+\usepackage{\LaTeXInputs/texname}
+\newcommand{\texname}{LucasAssetPrice}
+% \documentclass{handout}
+% \usepackage{handoutSetup}\usepackage{handoutShortcuts}
+% \begin{comment} % By CDC, first draft while walking dogs, on the occasion of reading Sargent's lecture notes praising the Lucas model as "beautiful"
+
+\begin{document}
+
+% \handoutSetup
+
+% \handoutShortcuts
+
+% \LaTeXInputs
+% \end{document}
+
+\handoutHeader
+
+\begin{verbatimwrite}{\jobname.title}
+The Lucas Asset Pricing Model
+\end{verbatimwrite}
+
+\handoutNameMake
+
+\section{Introduction/Setup}
+
+(See \href{https://econ-ark.org/materials/lucas-asset-price-model?launch}{Lucas-Asset-Price-Model} for a notebook that solves the model numerically).
+
+\end{document}
+
+\cite{lucas:assetpricing} considers an economy populated by infinitely many\footnote{As in \Aggregation.}  identical individual consumers, in which the only assets are a set of identical infinitely-lived trees.  Aggregate output is the fruit that falls from the trees, and cannot be stored (it would rot!); because $\uFunc^{\prime}(\cRat)>0~\forall~\cRat > 0$, the fruit is all eaten:
+\begin{equation}\begin{gathered}\begin{aligned}
+\cRat_{t}\Pop_{t} & =  \dvdnd_{t}\Kap_{t} \label{eq:CeqY}
+\end{aligned}\end{gathered}\end{equation}
+where $\cRat_{t}$ is consumption of fruit per person, $\Pop_{t}$ is the population, $\Kap_{t}$ measures the stock of trees, and $\dvdnd_{t}$ is the exogenous output of fruit that \textit{d}rops from each tree.\opt{MarginNotes}{\marginpar{\tiny Crucial assumption: the stock of trees is \textit{exogenous}; you can't consume a little less fruit and have more trees next period.}}  In a given year, each tree produces exactly the same amount of fruit as every other tree, but $\dvdnd_{t}$ varies from year to year depending on the weather.\footnote{$\dvdnd_{t}$ must always be strictly positive because $\uFunc(0) = -\infty$ and $\uFunc^{\prime}(0)=\infty$.}
+
+An economy like this, in which output arrives without any deliberate actions on the part of residents, is called an `endowment' economy (or, sometimes, an `exchange' economy).\footnote{The alternative is a `production' economy, in which factors of production -- labor, capital, maybe land, maybe knowledge -- combine somehow to generate the output.  There is no consensus about the best way to construct production economies with asset pricing.}  \opt{\marginpar{\tiny Market for buying and selling trees by individual consumers.}}{} \opt{\marginpar{\tiny Model requires mental gymnastics: lots of identical individual consumers must be satisfied.}}{}
+
+\hypertarget{The-Market-for-Trees}{}
+\section{The Market for Trees}
+
+If there is a perfect capital market for trees, the price of trees $\Price_{t}$ must be such that, each period, each (identical) consumer does not want either to increase or to decrease their holding of trees.\footnote{If, at a hypothesized equilibrium price, every identical consumer wanted (say) to increase their holdings, that price could not be an equilibrium price, because with a fixed supply of trees everyone cannot increase their holding of trees at once!}
+
+If a tree is sold, the sale is assumed to occur after the existing owner receives that period's fruit ($\Price_{t}$ is the `ex-dividend' price).  Total resources available to consumer $i$ in period $t$ are the sum of the fruit received from the trees owned, $\dvdnd_{t}\kap_{t}^{i}$, plus the potential proceeds if the consumer were to sell all his stock of trees, $\Price_{t}\kap_{t}^{i}$.  Total resources are divided into two uses: Current consumption $c_{t}^{i}$ and the purchase of trees for next period $\kap_{t+1}^{i}$ at price $\Price_{t}$,
+\begin{equation}\begin{gathered}\begin{aligned}
+\overbrace{\kap_{t+1}^{i}\Price_{t}+c_{t}^{i}}^{\text{Uses of resources}}     & =  \overbrace{\dvdnd_{t}\kap_{t}^{i}+\Price_{t}\kap_{t}^{i}}^{\text{Total resources}} 
+\\      \kap_{t+1}^{i} & =  (1+\dvdnd_{t}/\Price_{t})\kap_{t}^{i}-c_{t}^{i}/\Price_{t}.
+\end{aligned}\end{gathered}\end{equation}
+
+\section{The Problem of an Individual Consumer}
+Consumer $i$ maximizes 
+\begin{equation}\begin{gathered}\begin{aligned}
+%        \vFunc({m}_{t}^{i}) & =  \max ~ \Ex_{t}^{i}\left[\sum_{n=0}^{\infty} \DiscFac^{n} \log \cRat_{t+n}^{i} \right]  \label{eq:origprob}
+        \vFunc({m}_{t}^{i}) & =  \max ~ \Ex_{t}^{i}\left[\sum_{n=0}^{\infty} \DiscFac^{n} \uFunc(\cRat_{t+n}^{i}) \right]  \label{eq:origprob}
+\\      & \text{s.t.}    \nonumber
+\\  \kap_{t+1}^{i} & =  (1+\dvdnd_{t}/\Price_{t})\kap_{t}^{i}-c_{t}^{i}/\Price_{t} \notag
+\\  {m}_{t+1}^{i} & =  (\Price_{t+1}+\dvdnd_{t+1})\kap_{t+1}^{i}. \notag
+\end{aligned}\end{gathered}\end{equation}
+Rewriting in the form of Bellman's equation,\hypertarget{Bellman}{}
+\begin{equation*}\begin{gathered}\begin{aligned}
+        \vFunc({m}_{t}^{i}) & =  \max_{\{c_{t}^{i}\}} ~ \uFunc(c_{t}^{i}) + \DiscFac \Ex_{t}^{i}\left[\vFunc({m}_{t+1}^{i})\right]
+%\\      & =  \max_{\{c_{t}^{i}\}} ~ \uFunc(c_{t}^{i}) + \DiscFac \Ex_{t}^{i}\left[\vFunc\left(({\Price}_{t+1}+\dvdnd_{t+1})\underbrace{\left((1+\dvdnd_{t}/\Price_{t})\kap_{t}^{i}-c_{t}^{i}/\Price_{t}\right)}_{\kap_{t+1}^{i}}\right)\right] \nonumber 
+,
+\end{aligned}\end{gathered}\end{equation*}
+the first order condition tells us that \opt{MarginNotes}{\marginpar{\tiny Explain why the d/dC term corresponds to $\Risky$.}}
+\begin{equation}\begin{gathered}\begin{aligned}
+        0 & =  \uFunc^{\prime}(c_{t}^{i})+\DiscFac \Ex_{t}^{i}\left[\vFunc^{\prime}({m}_{t+1}^{i})\frac{\partial}{\partial c_{t}^{i}}\left(\overbrace{({\Price}_{t+1}+\dvdnd_{t+1})\underbrace{\left((1+\dvdnd_{t}/\Price_{t})\kap_{t}^{i}-c_{t}^{i}/\Price_{t}\right)}_{\kap_{t+1}^{i}}}^{{m}_{t+1}^{i}}\right)\right] 
+\end{aligned}\end{gathered}\end{equation} 
+so\hypertarget{FOCwithRisky}{}
+\begin{equation}\begin{gathered}\begin{aligned}
+ \uFunc^{\prime}(c_{t}^{i}) & =  \DiscFac \Ex_{t}^{i}\left[\vFunc^{\prime}({m}_{t+1}^{i})\left(\underbrace{\frac{{\Price}_{t+1}+\dvdnd_{t+1}}{\Price_{t}}}_{\equiv \Risky_{t+1}}\right)\right] \label{eq:FOCwithRisky}
+\\  & =  \DiscFac \Ex_{t}^{i}\left[\Risky_{t+1} \vFunc^{\prime}({m}_{t+1}^{i})\right] 
+\end{aligned}\end{gathered}\end{equation}
+where $\Risky_{t+1}$ is the return factor that measures the resources in period $t+1$ that are the reward for 
+owning a unit of trees at the end of $t$.
+
+\hypertarget{pofci}{}
+The \handoutC{Envelope} theorem tells us that  $\vFunc^{\prime}({m}_{t+1}^{i})=\uFunc^{\prime}(c_{t+1}^{i})$, so \eqref{eq:FOCwithRisky} becomes 
+\begin{verbatimwrite}{./Equations/LAP_pofci.tex}
+\begin{equation}\begin{gathered}\begin{aligned}
+\uFunc^{\prime}(c_{t}^{i}) & =  \DiscFac \Ex_{t}^{i}\left[\uFunc^{\prime}(\cRat_{t+1}^{i})\left(\frac{{\Price}_{t+1}+\dvdnd_{t+1}}{\Price_{t}}\right)\right]  
+\\ \Price_{t} & =  \DiscFac \Ex_{t}^{i}
+\left[
+  \left(
+    \frac{\uFunc^{\prime}(\cRat_{t+1}^{i})}{\uFunc^{\prime}(\cRat_{t}^{i})}
+  \right)
+  \left({\Price}_{t+1}+\dvdnd_{t+1}\right) \label{eq:pofci}
+\right] .
+\end{aligned}\end{gathered}\end{equation}
+\end{verbatimwrite}
+\input{./Equations/LAP_pofci.tex}
+\section{Aggregation}
+
+Since all consumers are identical, $c_{t}^{i} = c_{t}^{j}~\forall~i,j$, so henceforth we just call consumption per capita $\cRat_{t}$.  Since aggregate consumption must equal aggregate production because fruit cannot be stored, normalizing the population to $\Pop_{t}=1 ~\forall ~ t$ and the stock of trees to $\Kap_{t}=1 ~\forall~t$, equation \eqref{eq:CeqY} becomes:
+\begin{equation}\begin{gathered}\begin{aligned}
+\cRat_{t} & =  \dvdnd_{t}.
+\end{aligned}\end{gathered}\end{equation}
+
+\hypertarget{pofd}{}
+Substituting $\cRat_{t}$ and $\cRat_{t+1}$ for $c_{t}^{i}$ and $c_{t+1}^{i}$ in  (\ref{eq:pofci}) and then
+substituting $\dvdnd_{t}$ for $\cRat_{t}$ we get
+\begin{verbatimwrite}{./Equations/LAP_pofd.tex}
+\begin{equation}\begin{gathered}\begin{aligned}
+ \Price_{t} & =  \DiscFac \Ex_{t}\left[\left(\frac{\uFunc^{\prime}(\dvdnd_{t+1})}{\uFunc^{\prime}(\dvdnd_{t})}\right)\left({\Price}_{t+1}+\dvdnd_{t+1}\right)\right] \label{eq:pofd}.
+\end{aligned}\end{gathered}\end{equation}
+\end{verbatimwrite}
+\input{./Equations/LAP_pofd.tex}
+
+
+We can rewrite this more simply if we define
+\begin{verbatimwrite}{./Equations/LAP_StochDiscFact.tex}
+\begin{equation}\begin{gathered}\begin{aligned}
+  \label{eq:StochDiscFact}
+  \SDF_{t,t+n} & =  \DiscFac^{n} \left(\frac{\uFunc^{\prime}(\dvdnd_{t+n})}{\uFunc^{\prime}(\dvdnd_{t})}\right)
+\end{aligned}\end{gathered}\end{equation}
+\end{verbatimwrite}
+\input{./Equations/LAP_StochDiscFact.tex}
+
+$\SDF_{t,t+n}$ is called the `stochastic discount factor' because (a) it is stochastic (thanks to the shocks between $t$ and $t+n$ that determine the value of $\dvdnd_{t+n}$); and (b) it measures the rate at which all agents in this economy in period $t$ will discount a dividend received in a future period, e.g.\ $t+1$: \hypertarget{Pt}{}
+\begin{equation}\begin{gathered}\begin{aligned}
+ \Price_{t} & =  \Ex_{t}\left[\SDF_{t,t+1}\left({\Price}_{t+1}+\dvdnd_{t+1}\right)\right] . \label{eq:Pt}
+\end{aligned}\end{gathered}\end{equation}
+
+A corresponding equation will hold in period $t+1$ (and in period $t+2$ and beyond):
+\begin{equation}\begin{gathered}\begin{aligned}
+ \Price_{t+1} & =  \Ex_{t+1}\left[\SDF_{t+1,t+2}\left({\Price}_{t+2}+\dvdnd_{t+2}\right)\right] \label{eq:Ptp1}
+%\\ \Price_{t+2} & =  \Ex_{t+2}\left[\SDF_{t+2,t+3}\left({\Price}_{t+3}+\dvdnd_{t+3}\right)\right], %\label{eq:Ptp2}
+\end{aligned}\end{gathered}\end{equation}
+so we can use repeated substitution, e.g.\ of \eqref{eq:Ptp1} into \eqref{eq:Pt}, and so on to get
+\begin{verbatimwrite}{./Equations/LAP_PtsubPtp1.tex}
+\begin{equation}\begin{gathered}\begin{aligned}
+ \Price_{t} & =  \Ex_{t}\left[\SDF_{t,t+1}\dvdnd_{t+1}\right]+\Ex_{t}[\SDF_{t,t+1}\Ex_{t+1}[\SDF_{t+1,t+2}\dvdnd_{t+2}]]+ \ldots \label{eq:PtsubPtp1}
+.
+\end{aligned}\end{gathered}\end{equation}
+\end{verbatimwrite}
+\input{./Equations/LAP_PtsubPtp1.tex}
+
+The `law of iterated expectations' says that
+$\Ex_{t}[\Ex_{t+1}[{\Price}_{t+2}]] = \Ex_{t}[{\Price}_{t+2}]$;
+given this, and noting that $\SDF_{t,t+2} = \SDF_{t,t+1}\SDF_{t+1,t+2}$, \eqref{eq:PtsubPtp1} becomes:
+\begin{verbatimwrite}{./Equations/LAP_PtAsPDV.tex}
+\begin{equation}\begin{gathered}\begin{aligned}
+ \Price_{t} & =  \Ex_{t}\left[\SDF_{t,t+1}\dvdnd_{t+1}+\SDF_{t,t+2}\dvdnd_{t+2}+\SDF_{t,t+3}\dvdnd_{t+3}+...\right] . \label{eq:PtAsPDV}
+\end{aligned}\end{gathered}\end{equation}
+\end{verbatimwrite}
+\input{./Equations/LAP_PtAsPDV.tex}
+
+So, the price of the asset is the present discounted value of the stream of future `dividends,' where the stochastic factor by which (potentially stochastic) dividends received in $t+n$ are discounted back to $t$ is $\SDF_{t,t+n}$.\footnote{The assumption that all consumers are identical here is important; heterogeneity in much of anything (wealth, income processes, along with an assumption that each consumer has only a finite amount of wealth and a finite horizon, will destroy the implication that there is a single unique SDF that all agents use to discount the future).}
+
+
+\section{Specializing the Model}
+% Rework for CRRA throughout
+
+This is as far as we can go without making explicit assumptions about the structure
+of utility.  If utility is CRRA, $\uFunc(\cRat)=(1-\CRRA)^{-1}\cRat^{1-\CRRA},$ substituting $\uFunc^{\prime}(\dvdnd)=\dvdnd^{-\CRRA}$ into \eqref{eq:pofd} yields
+\begin{verbatimwrite}{./Equations/LAP_pofdCRRA.tex}
+\begin{equation}\begin{gathered}\begin{aligned}
+      \Price_{t} & =  \DiscFac \dvdnd_{t}^{\CRRA} \Ex_{t}\left[\dvdnd_{t+1}^{-\CRRA}(\Price_{t+1}+\dvdnd_{t+1})\right] \label{eq:pofdCRRA}
+\\ \frac{\Price_{t}}{\dvdnd_{t}^{\CRRA}} & =  \DiscFac \Ex_{t}\left[\frac{\Price_{t+1}}{\dvdnd_{t+1}^{\CRRA}}+\dvdnd_{t+1}^{1-\CRRA}\right] 
+\end{aligned}\end{gathered}\end{equation}
+\end{verbatimwrite}
+\input{./Equations/LAP_pofdCRRA.tex}
+
+
+The particularly special case of logarithmic utility (which Lucas emphasizes) corresponds to $\CRRA=1$, implying $\dvdnd_{t+1}^{1-\CRRA}=1$ which (again using the law of iterated expectations) allows us to simplify the second version of \eqref{eq:pofdCRRA} to
+\begin{verbatimwrite}{./Equations/LAP_pofdLog.tex}
+\begin{equation*}\begin{gathered}\begin{aligned}
+\frac{\Price_{t}}{\dvdnd_{t}} & =  \DiscFac \left(1+\Ex_{t} \left[\frac{{\Price}_{t+1}}{\dvdnd_{t+1}}\right]\right)  \label{eq:pofdLog}
+\\ & =  \DiscFac \left(1+\DiscFac \left(1+\Ex_{t}\left[\frac{{\Price}_{t+2}}{\dvdnd_{t+2}}\right]\right)\right)
+\\ & =  \frac{\DiscFac}{1-\DiscFac} + \DiscFac \Ex_{t}\left\{\lim_{n\rightarrow \infty}\DiscFac^{n-1}\left[\frac{\Price_{t+n}}{\dvdnd_{t+n}}\right]\right\}.
+\end{aligned}\end{gathered}\end{equation*}
+\end{verbatimwrite}
+\input{./Equations/LAP_pofdLog.tex}
+
+
+If the price is bounded (it cannot ever go, for 
+example, to a value such that it would cost more than the economy's 
+entire output to buy a single tree), it is possible to show that the $\lim$ term 
+in this equation goes to zero.  Using the usual definition of the time preference factor
+as $\DiscFac = 1/(1+\timeRate)$ where $\timeRate$ is the time preference rate, the equilibrium price is:
+\begin{verbatimwrite}{./Equations/LAP_pWithLogU.tex}
+\begin{equation}\begin{gathered}\begin{aligned}
+ \Price_{t} & =  \dvdnd_{t}\left(\frac{\DiscFac}{1-\DiscFac} \right) \notag 
+\\  & =  \dvdnd_{t}\left(\frac{1}{1/\DiscFac-1} \right) \notag 
+\\  & =  \dvdnd_{t}\left(\frac{1}{1+\timeRate-1} \right) \notag
+\\  & =  \frac{\dvdnd_{t}}{\timeRate} \label{eq:pWithLogU}
+\end{aligned}\end{gathered}\end{equation}
+\end{verbatimwrite}
+\input{./Equations/LAP_pWithLogU.tex}
+or, equivalently, the `dividend-price ratio' is always $\dvdnd_{t}/\Price_{t} = \timeRate$.
+
+It may surprise you that the equilibrium price of trees today does not depend on the expected level of fruit output in the future.  If the weather was bad this year, but is expected to return to normal next year (and, by definition, is expected to be equal to normal in subsequent years), you might think that the price today would mostly reflect the `normal' value of fruit prodution that the trees produce, not the (temporarily low) value that happens to obtain today.
+
+The above derivation says that intuition is wrong: Today's price depends only on today's output.
+
+Nevertheless, the logic (higher future output is a reason for higher current prices) is not wrong; but it is (exactly) counterbalanced by another, and subtler, fact: Since future consumption will equal future fruit output, higher expected fruit output means lower marginal utility of consumption in that future period of (more) abundant fruit (basically, people are starving today, which reduces the attractiveness of cutting their consumption to buy trees that will produce more in a period when they expect \textit{not} to be starving).  These two forces are the manifestation of the (pure) income effect and substitution effect in this model (there is no human wealth, and therefore no human wealth effect).  In our assumed special case of logarithmic utility, income and substitution effects are of the same size and opposite sign so the two forces exactly offset.
+
+\section{The `Rate of Return' in a Lucas Model}
+We can decompose the return factor attributable to ownership of a share of capital (cf.\ \eqref{eq:FOCwithRisky}) by adding and subtracting $\Price_{t}$ in the numerator:
+\begin{equation}\begin{gathered}\begin{aligned}
+  \riskyELev_{t+1} & =  \left(\frac{{\Price}_{t+1}+{\Price}_{t}-{\Price}_{t}+\dvdnd_{t+1}}{\Price_{t}}\right) \notag
+\\        & =  \left(1+\frac{\Delta {\Price}_{t+1}}{\Price_{t}}+\frac{\dvdnd_{t+1}}{\Price_{t}}\right) \label{eq:RiskyDecompose}
+\end{aligned}\end{gathered}\end{equation}
+so the `rate of return' is 
+\begin{equation}\begin{gathered}\begin{aligned}
+ \riskyELev_{t+1}    & =  \frac{\Delta {\Price}_{t+1}}{\Price_{t}}+\frac{\dvdnd_{t+1}}{\Price_{t}} \label{eq:riskyDecompose}
+\end{aligned}\end{gathered}\end{equation}
+which is a useful decomposition because the two components 
+have natural interpretations: The first is a `capital gain' (or loss),
+and the second can plausibly identified as `the interest rate' paid
+by the asset (because it corresponds to income received regardless of whether the asset
+is liquidated).
+
+In models that do not explicitly discuss asset pricing, the
+implicit assumption is usually that the price of capital is constant
+(which might be plausible if capital consists mostly of reproducible items
+like machines,\footnote{The key insights below remain true even if there is a gradual trend in the real price of capital goods, as has in fact been true.} rather than Lucas trees).  In this case
+\begin{equation*}\begin{gathered}\begin{aligned}
+  \Risky_{t+1} & =  \left(1+\frac{\dvdnd_{t+1}}{\Price_{t}}\right)
+\end{aligned}\end{gathered}\end{equation*}
+says that the only risk in the rate of return is attributable to unpredictable variation in the size of 
+dividend/interest payments.  Indeed, if additional assumptions are made (e.g., perfect capital markets) that yield the conclusion that the interest rate matches the marginal product of capital, then such models generally imply that variation in returns (at least at high frequencies) is very small, because aggregate capital typically is very stable from one period to the next; if the aggregate production function is stable, this implies great stability in the marginal product of capital.
+
+\section{Aggregate Returns Versus Individual Returns}
+
+One of the subtler entries in \cite{aristotleFallacies}'s catalog of common human reasoning errors was the `fallacy of composition,' in which the reasoner supposes that if a proposition is true of each element of a whole, then it must be true of the whole.
+
+The Lucas model provides a counterexample.  From the standpoint of any individual (atomistic) agent, it is quite true that a decision to save one more unit will yield greater future resources, in the amount $\Risky_{t+1}$.  But from the standpoint of the society as a whole, if everyone decided to do the same thing (save one more unit), there would be no effect on aggregate resources in period $t+1$.  Put another way, for any individual agent, it appears that the `marginal product of capital' is $\Risky_{t+1}$, but for the society as a whole the marginal product of capital is zero.
+
+The proposition that the return for society as a whole must be the same as the return that is available to individuals is an error because it implicitly assumes that there are no general equilibrium effects of a generalized desire to save more (or, more broadly, there is no interaction between the decisions one person makes and the decisions of another person).  The Lucas model provides a counterexample in which, if everyone's preferences change (e.g., $\timeRate$ goes down for everyone), the price of the future asset is affected -- indeed, it is affected in a way that is sufficient to exactly counteract the increased desire for ownership of future dividends (since there is a fixed supply of assets to be owned, the demand must be reconciled with that preexisting supply).
+
+Aristotle was a smart guy!
+
+\section{A Surprise}
+
+In the case where dividends are identically individually lognormally distributed, $\log \dvdnd_{t+1} \sim \mathcal{N}(-\riskyvar/2,\riskyvar)$, the appendix shows that
+\begin{equation}\begin{gathered}\begin{aligned}
+  \log \Price_{t} & =  \CRRA \log \dvdnd_{t} + \CRRA(\CRRA-1)\riskyvar/2 - \timeRate 
+\end{aligned}\end{gathered}\end{equation}
+and thus the variances obey
+\begin{equation}\begin{gathered}\begin{aligned}
+  \label{eq:varLogPvsLogd}
+  \var({\log \Price}) & =  \CRRA^{2} \var(\log \dvdnd)
+.
+\end{aligned}\end{gathered}\end{equation}
+
+
+
+Given that $\CRRA > 1$, this derivation yields some interesting insights:
+\begin{enumerate}
+\item (the log of) asset prices will be more volatile than (the log of) dividends
+  \begin{itemize}
+  \item This would be even more true if $\timeRate$ were stochastic, as is often assumed in the asset pricing literature
+  \end{itemize}
+  \item An increase in risk aversion $\CRRA$ \textit{increases} the price $\Price_{t}$ (because $\CRRA(\CRRA-1)\riskyvar/2 > 0$ and an increase in $\CRRA$ increases its size)  %if $\dvdnd_{t} > -\CRRA (\CRRA-1)\riskyvar/2$.   
+\end{enumerate}
+
+The second point is surprising; \href{https://chat.openai.com/chat}{ChatGPT} correctly summarizes the usual received wisdom about risk aversion by saying ``In general, an increase in risk aversion can cause a decrease in the overall stock market ...''\footnote{\textit{``When risk aversion increases, investors tend to be more cautious and prefer safer investments over riskier ones, such as stocks. As a result, there is a decrease in demand for stocks, which leads to a decrease in their prices.  In general, an increase in risk aversion can cause a decrease in the overall stock market, as investors sell off their shares to move their money into safer investments, such as bonds or cash. This can result in a downward trend in the stock market indices. However, it's important to note that the impact of risk aversion on the stock market can be complex and multifaceted, and there are many other factors that can influence the stock market as well. For example, government policies, economic data, and news events can all have a significant impact on the stock market, regardless of the level of risk aversion among investors.''} -- \href{https://help.openai.com/en/articles/6825453-chatgpt-release-notes}{ChatGPT version 2022-02-13}}  The reason for this prediction is intuitive: an increase in risk aversion makes people want the risky asset less, and if they want it less one would think that the price should be lower.  But no: an \textit{increase} in risk aversion \textit{increases} the price of the risky asset.   The resolution of this conflict between ChatGPT and Lucas comes from realizing that the usual model (ChatGPT will always summarize `the usual model') is one in which investors have access to a safe asset as well as a risky one, while in the Lucas model presented here the \textit{only} asset available is risky.  
+
+\section{Analytical and Numerical Solutions}
+
+The appendices derive various results about the solution to the model under
+different assumptions.  But, unfortunately, the model has analytical solutions
+(like, $P = d/\vartheta$) or approximate analytical solutions only in special circumstances.  The accompanying
+\href{https://mybinder.org/v2/gh/econ-ark/DemARK/HEAD?filepath=notebooks/Lucas-Asset-Pricing-Model.ipynb}{DemARK notebook}
+shows how to solve the model numerically for a simple case where there is no
+such analytical solution (the case where dividends follow an AR(1) process), and also shows
+how the numerical solution compares with the approximate analytical solution in the CRRA utility case.
+
+\pagebreak
+\appendix \renewcommand{\thesection}{\arabic{section}} % For some reason after \appendix it stops putting 0. before subsection numbers; this fixes it
+
+\appendix
+\centerline{\Large Appendix:  Analytical Solutions in CRRA Utility Case}
+
+\medskip\medskip\medskip
+
+\section{When Dividends are IID}
+\newcommand{\dCRRAoverP}{\delta}
+\newcommand{\PoverdCRRA}{\delta^{-1}}
+
+When $\CRRA > 1$, we can rewrite \eqref{eq:pofdCRRA} by multiplying the second term on the right by $\Price_{t+1}/\Price_{t+1}$, yielding
+\begin{equation}\begin{gathered}\begin{aligned}
+      \left(\frac{\Price_{t}}{\dvdnd_{t}^{\CRRA}}\right) & =  \DiscFac \Ex_{t}\left[\left(\frac{\Price_{t+1}}{\dvdnd_{t+1}^{\CRRA}}+\frac{\Price_{t+1}}{\dvdnd_{t+1}^{\CRRA}}\frac{\dvdnd_{t+1}}{\Price_{t+1}}\right)\right] \label{eq:PoverdCRRA}
+      \\ & =  \DiscFac \Ex_{t}\left[\frac{\Price_{t+1}}{\dvdnd_{t+1}^{\CRRA}}\left(1+\frac{\dvdnd_{t+1}}{\Price_{t+1}}\right)\right]
+      \\ & =  \DiscFac \Ex_{t}\left[\frac{\Price_{t+1}}{\dvdnd_{t+1}^{\CRRA}}\left(1+\frac{\dvdnd_{t+1}\dvdnd_{t+1}^{-\CRRA}\dvdnd_{t+1}^{\CRRA}}{\Price_{t+1}}\right)\right]       
+      \\ & =  \DiscFac \Ex_{t}\left[\frac{\Price_{t+1}}{\dvdnd_{t+1}^{\CRRA}}+\dvdnd_{t+1}^{1-\CRRA}\right]
+    \end{aligned}\end{gathered}\end{equation}
+and we can hypothesize that there is a solution with a constant ratio $\dCRRAoverP=\dvdnd^{\CRRA}/\Price$.  In that case this equation simplifes to 
+\begin{equation}\begin{gathered}\begin{aligned}
+      \PoverdCRRA & =  \DiscFac \Ex_{t}\left[\PoverdCRRA+\dvdnd_{t+1}^{1-\CRRA}\right]     \label{eq:recursive}
+    \end{aligned}\end{gathered}\end{equation}
+
+Suppose $\dvdnd_{t+n}$ is identically individually distributed in every future period, so that its expectation as of $t$ is the same for any date $n>0$:
+\begin{equation}\begin{gathered}\begin{aligned}
+  \edvdnd & \equiv  \Ex_{t}[\dvdnd_{t+n}^{1-\CRRA}].   \label{eq:dmod}
+\end{aligned}\end{gathered}\end{equation}
+
+Now note that \eqref{eq:recursive} can be rewritten as
+\begin{equation}\begin{gathered}\begin{aligned}
+  \frac{\Price_{t}}{\dvdnd_{t}^{\CRRA}}          & =  \DiscFac \left( \edvdnd + \Ex_{t}\left[\frac{\Price_{t+1}}{\dvdnd_{t+1}^{\CRRA}}\right] \right) 
+\\ & =  \DiscFac \edvdnd \left(1 + \DiscFac + \DiscFac \Ex_{t}\left[\frac{\Price_{t+2}}{\dvdnd_{t+2}^{\CRRA}}\right]\right) 
+\\ & =  \DiscFac \edvdnd \left(1 + \DiscFac  + \DiscFac^{2} + \ldots + \underbrace{\Ex_{t} \left[\lim_{n\rightarrow \infty}\DiscFac^{n-1}\left[\frac{\Price_{t+n}}{\dvdnd_{t+n}^{\CRRA}}\right]\right]}_{\text{assume goes to zero}}\right) 
+\\ & =  \left(\frac{\DiscFac \edvdnd}{1-\DiscFac}\right)
+\\ & =  \left(\frac{\edvdnd}{\DiscFac^{-1}-1}\right) \label{eq:PtCRRA}
+\end{aligned}\end{gathered}\end{equation}
+
+\providecommand{\riskyvar}{}
+\renewcommand{\riskyvar}{\sigma_{\dvdnd}^{2}}
+To make further progress, suppose that the iid process for the stochastic component of dividends is a mean-one lognormal: $\log \dvdnd_{t+n} \sim \mathcal{N}(-\sigma^{2}/2,\sigma^{2})~\forall~n$ so that $\Ex_{t}[\dvdnd_{t+n}]=1~\forall~n$ (see \ELogNormMeanOne), in which case \ELogNormTimes~can be used to show that\footnote{
+  The derivation is identical to the one in \handoutA{Portfolio-CRRA} for the portfolio-weighted return in the case of lognormally distributed risky returns, setting the mean log return to $\riskyELog=0$ and the portfolio share $\riskyshare$ to 1.
+  }
+\begin{equation}\begin{gathered}\begin{aligned}
+%  \log \edvdnd & =  -(1/2)(1-\CRRA)\riskyvar%\underbrace{-(1-\CRRA)\riskyvar/2}_{-\riskyvar/2+\CRRA \riskyvar/2}
+% + \underbrace{(1/2)(1-\CRRA)(1-\CRRA) \riskyvar}_{(1/2)(1-\CRRA) \riskyvar-\CRRA \riskyvar/2}
+%\\ & =  \CRRA (\CRRA-1) \riskyvar/2\\
+ \edvdnd & =  e^{\CRRA(\CRRA-1)\riskyvar/2} \label{eq:edvdndSimple}
+\end{aligned}\end{gathered}\end{equation}
+and if we define the discount factor as $\DiscFac = 1/(1+\timeRate)$ then $\DiscFac^{-1}=1+\timeRate$; substituting into \eqref{eq:PtCRRA}, 
+%use \handoutM{OverPlus} to approximate $\DiscFac \approx e^{-\timeRate}$ then $\DiscFac^{-1} \approx 1+\timeRate$ and so \eqref{eq:PtCRRA} becomes
+\begin{equation}\begin{gathered}\begin{aligned}
+  \frac{\Price_{t}}{\dvdnd_{t}^{\CRRA}} 
+ & =  \left(\frac{e^{\CRRA(\CRRA-1)\riskyvar/2}}{\timeRate}\right)
+\\ \Price_{t} & =  \left(\frac{\dvdnd_{t}^{\CRRA} e^{\CRRA(\CRRA-1)\riskyvar/2}}{\timeRate}\right) \label{eq:PmeanOneLognorm}
+\end{aligned}\end{gathered}\end{equation}
+
+So the log is
+\begin{verbatimwrite}{./Equations/LAP_PtLogIID.tex}
+\begin{equation}\begin{gathered}\begin{aligned}
+  \log \Price_{t} & =  \CRRA \log \dvdnd_{t} + \CRRA(\CRRA-1)\riskyvar/2 - \timeRate \label{eq:PtLogIID}
+\end{aligned}\end{gathered}\end{equation}
+\end{verbatimwrite}
+\input{./Equations/LAP_PtLogIID.tex}
+as asserted in the main text.
+
+\section{When Dividends Follow a Random Walk}
+
+The polar alternative to IID shocks would be for dividends to follow a random walk: $\log (\dvdnd_{t+1}/\dvdnd_{t}) \sim \mathcal{N}(-\riskyvar/2,\riskyvar)$.  (Recall that this assumption implies that the expected arithmetic growth rate for dividends is zero: $\Ex_{t}[\dvdnd_{t+1}/\dvdnd_{t}]=\exp(-\riskyvar/2+\riskyvar/2)=e^{0}=1$; later we will consider the case in which dividends have a positive trend growth rate).
+
+Now divide both sides of \eqref{eq:pofdCRRA} by $\dvdnd_{t}$, and rewrite the object inside the expectations operator by multiplying the first term by $\dvdnd_{t+1}$ and dividing the second term by $\dvdnd_{t+1}$, yielding
+\begin{verbatimwrite}{./Equations/LAP_pofdCRRAWdvdndGro.tex}
+\begin{equation}\begin{gathered}\begin{aligned}
+ \Price_{t} & =  \DiscFac \dvdnd_{t}^{\CRRA} \Ex_{t}\left[\dvdnd_{t+1}^{-\CRRA}(\Price_{t+1}+\dvdnd_{t+1})\right] \label{eq:pofdCRRAWdvdndGro}
+\\ \left(\frac{\Price_{t}}{\dvdnd_{t}}\right) & =  \DiscFac \dvdnd_{t}^{-(1-\CRRA)} \Ex_{t}\left[\dvdnd_{t+1}^{1-\CRRA}\left(\frac{\Price_{t+1}}{\dvdnd_{t+1}}+1\right)\right] 
+\\ & =   \DiscFac  \Ex_{t}\left[\left(\frac{\dvdnd_{t+1}}{\dvdnd_{t}}\right)^{1-\CRRA}\left(\frac{\Price_{t+1}}{\dvdnd_{t+1}}+1\right)\right]
+.
+\end{aligned}\end{gathered}\end{equation}
+\end{verbatimwrite}
+\input{./Equations/LAP_pofdCRRAWdvdndGro.tex}
+
+Note that our assumption here about the distribution of $\dvdnd_{t+1}/\dvdnd_{t}$ is identical to the assumption about $\dvdnd_{t+1}$ above, so the expectation will be the same $\edvdnd$.  Now hypothesize that there will be a solution under which the price-dividend ratio is a constant; call it $\riskyELev^{-1}$:  
+\begin{verbatimwrite}{./Equations/LAP_pofdCRRAIsConst.tex}
+\begin{equation}\begin{gathered}\begin{aligned}
+\riskyELev^{-1}  & =   \DiscFac  \left[\edvdnd(\riskyELev^{-1}+1)\right] 
+\\ 1 & =  \DiscFac \edvdnd (1+\riskyELev)
+\\ \frac{1}{\DiscFac \edvdnd} & = 1+\riskyELev
+\end{aligned}\end{gathered}\end{equation}
+but $\log \edvdnd = \CRRA(\CRRA-1)\riskyvar/2$, while \handoutM{OverPlus} says that $\log \DiscFac \approx -\timeRate$ and \handoutM{ExpEps} says $\log(1+\riskyELev)\approx\riskyELev$, so taking the log of both sides of this equation therefore yields
+\begin{equation}\begin{gathered}\begin{aligned}
+ \timeRate - \CRRA(\CRRA-1)\riskyvar/2 & \approx \riskyELev
+\end{aligned}\end{gathered}\end{equation}
+\end{verbatimwrite}
+\input{./Equations/LAP_pofdCRRAIsConst.tex}
+
+In the case of logarithmic utility ($\CRRA=1$), this equation confirms our earlier conclusion in the main text that the arithmetic interest rate must be equal to the time preference rate in order for the economy to be in equilibrium.
+
+But with $\CRRA > 1$, the expression subtracted from $\timeRate$ must be positive.  That is simply saying that if consumers have risk aversion higher than that of logarithmic utility, the equilibrium price-dividend ratio must be such that consumers expect a higher $\riskyELev$ to make them willing to hold the asset.  For example, in the case where $\CRRA=2$, the expression becomes 
+\begin{equation}\begin{gathered}\begin{aligned}
+ \riskyELev  & \approx \timeRate - \riskyvar,
+\end{aligned}\end{gathered}\end{equation}
+which indicates that the arithmetic rate of return must be lower than the time preference rate by the amount $\riskyvar$ in order to induce consumers to hold the risky asset.  Remembering that, for a given dividend payout, a lower $\dvdnd/\Price$ must be accomplished by a higher price, this says that the price of the risky asset will be higher in the economy with $\CRRA > 1$.
+
+%\\ (\DiscFac \edvdnd)^{-1} & = \left(\frac{\Price_{t}+\dvdnd_{t}}{\Price_{t}}\right)
+%\\ 0 & =  \log (\DiscFac \edvdnd) + \log (1+\risky)
+%\\ \log (1+\dvdnd_{t}/\Price_{t}) & =  \log (\DiscFac \edvdnd) 
+%\end{aligned}\end{gathered}\end{equation}
+% and using the implication of \handoutM{LogEps} that $\log (1+\riskyELev) \approx \riskyELev$ and of \handoutM{OverPlus} that $\log \DiscFac \equiv \log (1/(1+\timeRate)) \approx -\timeRate$,
+% \begin{verbatimwrite}{./Equations/LAP_pofdCRRAIsConst.tex}
+% \begin{equation}\begin{gathered}\begin{aligned}
+%    0 & \approx  \log (\DiscFac \edvdnd) + \riskyELev
+% \\   & \approx \log \edvdnd + (\riskyELev-\timeRate)
+% \\ \underbrace{\log \edvdnd}_{=\CRRA(\CRRA-1)\riskyvar/2 \text{~from \eqref{eq:edvdndSimple}}} & \approx \timeRate - \riskyELev
+% \end{aligned}\end{gathered}\end{equation}
+% \end{verbatimwrite}
+% \input{./Equations/LAP_pofdCRRAIsConst.tex}
+% so that we obtain a formula for $\riskyELev = \dvdnd_{t}/\Price_{t}$,
+% \begin{verbatimwrite}{./Equations/LAP_PtLogRW.tex}
+%   \begin{equation}\begin{gathered}\begin{aligned}
+%       \riskyELev & \approx \timeRate - \CRRA(\CRRA-1)\riskyvar/2 \label{eq:nogro}
+% %        \log \left(\frac{1}{(\DiscFac \edvdnd)^{-1}-1}\right)  & = \log \dvdnd_{t}/\Price_{t} 
+% %\\  \log \Price_{t} & \approx  \log \dvdnd_{t}  - \log (\timeRate -  (1/2)\CRRA (\CRRA-1) \riskyvar)\label{eq:PtLogRW}
+% %\\  \Price_{t} & \approx  \dvdnd_{t} 
+% %\\  \frac{\Price_{t}}{\dvdnd_{t}} & \approx  \exp( - (\timeRate -  (1/2)\CRRA (\CRRA-1) \riskyvar))
+%       \end{aligned}\end{gathered}\end{equation}
+  
+
+
+  This equation seems puzzing because with a low enough time preference rate, and with $\CRRA > 1$ and $\riskyvar > 0$, it could possibly imply that $\dvdnd_{t}/\Price_{t} = \riskyELev < 0$.  If prices are positive, this must mean that dividends are negative - which was ruled out by assumption in the statement of the model (because aggregate consumption is equal to aggregate dividends, and negative $c_{t}$ would yield undefined utility).
+
+  What this reveals is that the model has no solution unless people are sufficiently impatient.  (This is another impatience condition like those articulated in \handoutC{PerfForesightCRRA} and \handoutC{TractableBufferStock} -- in this case, you must be impatient enough to want to hold the risky asset despite its riskiness).
+  
+  Recall our earlier assumption that $\edvdnd=1$; that is, the arithmetic growth rate of dividends is zero.  If, instead, dividends had a positive growth factor $\PGro=e^{\pGro}\approx 1+\pGro$, the consequence is that a further subtraction from $\timeRate$ is $\CRRA \pGro$:
+  \begin{equation}\begin{gathered}\begin{aligned}
+      \riskyELev & \approx \timeRate - \CRRA \pGro -\CRRA (\CRRA-1)\riskyvar/2
+      \end{aligned}\end{gathered}\end{equation}
+
+  This tightens the impatience condition to
+  \begin{equation}\begin{gathered}\begin{aligned}
+        \timeRate & \gtrsim \CRRA \pGro + \CRRA (\CRRA-1)\riskyvar/2
+      \end{aligned}\end{gathered}\end{equation}
+and note that by reducing the required rate of return, for any given level of dividends the price must be higher than in the case where $\pGro=0$.  That makes sense: People should be more eager to own shares when dividends are rising than when they are constant.
+
+All of this finally puts us in position to calculate the price from the dividend, which we can do using an updated version of \eqref{eq:PmeanOneLognorm} which incorporates growth:
+\begin{equation}\begin{gathered}\begin{aligned}
+  \frac{\Price_{t}}{\dvdnd_{t}^{\CRRA}} 
+ & =  \left(\frac{e^{\CRRA(\pGro+(\CRRA-1)\riskyvar/2)}}{\timeRate}\right)\label{eq:PLognormGro}
+% \\ \Price_{t} & =  \left(\frac{\dvdnd_{t}^{\CRRA} e^{\CRRA(\pGro+(\CRRA-1)\riskyvar/2)}}{\timeRate}\right) 
+ \\ \log \Price_{t} & =  \CRRA \log \dvdnd_{t} + \CRRA(\pGro+(\CRRA-1)\riskyvar/2)- \log \timeRate 
+\end{aligned}\end{gathered}\end{equation}
+from which we can directly read off the following propositions:
+\medskip
+
+\noindent For any given $\dvdnd_{t}$, the price $\Price_{t}$ is higher when:
+\begin{enumerate}
+\item Relative risk aversion $\CRRA$ is higher
+\item Dividend growth $\pGro$ is higher
+\item The time preference rate $\timeRate$ is smaller (people are more patient)
+  \begin{itemize}
+  \item Remember that $\timeRate$ is a small number (far less than 1), so $\log \timeRate < 0$.
+    \item Decreasing it makes it a larger negative number and thus $-\log \timeRate$ becomes more positive
+    \end{itemize}
+\end{enumerate}
+
+% If $\dvdnd_{t+1}/\dvdnd_{t}$ is lognormally distributed such that $\Ex_{t}[\log \dvdnd_{t+1}/\dvdnd_{t}]$ is $\riskyELev - \sigma_{\dvdnd}^{2}/2$ and variance $\riskyvar$, then \handoutM{LogELogNormTimes} tells us that
+% \begin{verbatimwrite}{./Equations/LAP_PtLogRW.tex}
+% \begin{equation}\begin{gathered}\begin{aligned}
+%       \log \Ex[ (\dvdnd_{t+1}/\dvdnd_{t})^{(1-\CRRA)}] & = (1-\CRRA) (\riskyELev - \riskyvar/2) + \CRRA^{2}\riskyvar/2
+% \\& = \CRRA \left(\riskyELev - \riskyvar/2 + \CRRA\riskyvar/2\right) = \CRRA \left(\riskyELev - (1-\CRRA)\riskyvar/2\right) 
+% %\\ \Ex[\CRRA \log \dvdnd_{t+1}/\dvdnd_{t}] & = \exp\left(\CRRA (\riskyELev-(1-\CRRA)\riskyvar/2)\right)
+% \end{aligned}\end{gathered}\end{equation}
+% \end{verbatimwrite}
+% \input{./Equations/LAP_PtLogRW.tex}
+
+
+\begin{comment}
+  % 20201104: The stuff below is wrong because the assumption was that dividends follow an AR(1) in LEVELS which is crazy
+\section{When Dividends Follow an AR(1) Process}
+
+Start with \eqref{eq:pofdCRRAWdvdndGro}:
+\input {./Equations/LAP_pofdCRRAWdvdndGro.tex}
+and substitute for $\dvdnd_{t+1}=\alpha \dvdnd_{t} + \err_{t+1}$:
+\begin{equation}\begin{gathered}\begin{aligned}
+ \left(\frac{\Price_{t}}{\dvdnd_{t}}\right) & =   \DiscFac  \Ex_{t}\left[\left(\frac{\alpha \dvdnd_{t}+\err_{t+1}}{\dvdnd_{t}}\right)^{1-\CRRA}\left(\frac{\Price_{t+1}}{\dvdnd_{t+1}}+1\right)\right] 
+\end{aligned}\end{gathered}\end{equation}
+
+We cannot make further analytical progress so long as the $\err_{t+1}$ term is present.  
+
+Numerical solutions tend to work best when it is possible to define
+the limits as the state variables approach their maximum possible
+values, so the next step is to try to compute such limits.
+
+\subsubsection{As $\dvdnd~\uparrow~\infty$}
+
+In the limit as $\dvdnd_{t}$ approaches $\infty$, the $\err_{t+1}$ term becomes arbitrarily small (relative to $\dvdnd_{t}$).  Thus,
+\begin{equation}\begin{gathered}\begin{aligned}
+ \lim_{\dvdnd_{t} \uparrow \infty} \left(\frac{\Price_{t}}{\dvdnd_{t}}\right) & =   \DiscFac  \left[\alpha^{1-\CRRA}\left(\frac{\Price_{t+1}}{\dvdnd_{t+1}}+1\right)\right] 
+\\ & =  \left(\frac{\DiscFac \alpha^{1-\CRRA}}{1-(\DiscFac \alpha^{1-\CRRA})}\right)
+\\ & =  \left(\frac{1}{\DiscFac^{-1} \alpha^{\CRRA-1} - 1}\right)
+\end{aligned}\end{gathered}\end{equation}
+
+\subsubsection{As $\dvdnd~\downarrow~0$}
+
+Suppose that $\log \err_{t+1} \sim \mathcal{N}(-\riskyvar/2,\riskyvar)$.  Then $\ELogNormTimes$ says:
+\begin{equation}\begin{gathered}\begin{aligned}
+  \log \Ex_{t}[\err_{t+1}\dvdnd_{t}^{-1}] & =  -(1-\CRRA)\dvdnd_{t}^{-1} \riskyvar/2 + \left(\frac{(1-\CRRA)}{\dvdnd_{t}^{-1}}\right)^{2}\riskyvar/2
+\\ & =  \dvdnd_{t}^{-1}\left(-(1-\CRRA) \riskyvar/2 + \left(\frac{(1-\CRRA)^{2}}{\dvdnd_{t}}\right)\riskyvar/2\right)
+\end{aligned}\end{gathered}\end{equation}
+whose limit is 
+\begin{equation}\begin{gathered}\begin{aligned}
+ \lim_{\dvdnd_{t} \downarrow 0} \log \Ex_{t}[\err_{t+1}\dvdnd_{t}^{-1}] & =   \left(\left(\frac{(1-\CRRA)}{\dvdnd_{t}}\right)^{2}\riskyvar/2\right)
+\end{aligned}\end{gathered}\end{equation}
+so 
+\begin{equation}\begin{gathered}\begin{aligned}
+ \lim_{\dvdnd_{t} \downarrow 0} \left(\frac{\Price_{t}}{\dvdnd_{t}}\right) & =   \DiscFac  \left[\left(\left(\frac{(1-\CRRA)}{\dvdnd_{t}}\right)^{2}\riskyvar/2\right)\left(\frac{\Price_{t+1}}{\dvdnd_{t+1}}+1\right)\right] 
+%\\ \lim_{\dvdnd_{t} \downarrow 0} \left(\Price_{t}\right) & =   \dvdnd_{t}^{-1} \DiscFac  \left[\left((1-\CRRA)^{2}\riskyvar/2\right)\left(\frac{\Price_{t+1}}{\dvdnd_{t+1}}+1\right)\right] 
+\end{aligned}\end{gathered}\end{equation}
+so since $\Price_{t+1}/\dvdnd_{t+1}$ is a finite number we should have that 
+\begin{equation}\begin{gathered}\begin{aligned}
+  \dvdnd_{t}^{2}  \lim_{\dvdnd_{t} \downarrow 0} \left(\frac{\Price_{t}}{\dvdnd_{t}}\right) & =  \DiscFac  \left[\left(\left(\frac{(1-\CRRA)}{1}\right)^{2}\riskyvar/2\right)\left(\frac{\Price_{t+1}}{\dvdnd_{t+1}}+1\right)\right] 
+\end{aligned}\end{gathered}\end{equation}
+which should imply that $\Price_{t} \dvdnd_{t}$ is a finite number even as $\dvdnd_{t} \downarrow 0$.  To have both limits be finite, we might be able to use a trick like the ones proposed by \cite{boyd:weighted}.  This would involve multiplying by some $f(\dvdnd)$ that approaches $\dvdnd_{t}^{2}$ as $\dvdnd_{t}$ approaches zero but approaches 1 as $\dvdnd_{t}$ approaches infinity.  Like, $f(d) = \dvdnd^{2} \left(\frac{1}{1+\dvdnd^{2}}\right)$? (The idea is that $f(\dvdnd) \Price_{t}/\dvdnd_{t}$ might be finite in both limits (and everywhere in between) even if $\Price_{t}/\dvdnd_{t}$ is not).  [Think more about this later].
+
+{\bf Alternative}.  The solution to the AR(1) case is surely somewhere between the solutions to the IID and RW cases.  That means that 
+it is between 
+\input{./Equations/LAP_PtLogIID.tex}
+and 
+\input{./Equations/LAP_PtLogRW.tex}
+which can surely somehow be used to produce a reasonable limit.  Actually, it seems pretty clear that the relevant comparison is to the IID case.
+
+\end{comment}
+
+\input handoutBibMake
+
+\end{document}
