@@ -1,0 +1,22 @@
+\providecommand{\noopsort}[1]{} \providecommand{\singleletter}[1]{#1}
+\ifx\undefined\BySame
+\newcommand{\BySame}{\leavevmode\rule[.5ex]{3em}{.5pt}\ }
+\fi
+\ifx\undefined\textsc
+\newcommand{\textsc}[1]{{\sc #1}}
+\newcommand{\emph}[1]{{\em #1\/}}
+\let\tmpsmall\small
+\renewcommand{\small}{\tmpsmall\sc}
+\fi
+\begin{thebibliography}{}
+
+\harvarditem[Aristotle]{Aristotle}{350 BC}{aristotleFallacies}
+\textsc{Aristotle}  (350 BC): \emph{On Sophistical Refutations}. The Wikipedia
+  Foundation.
+
+\harvarditem[Lucas]{Lucas}{1978}{lucas:assetpricing}
+\textsc{Lucas, Robert~E.}  (1978): ``Asset Prices in an Exchange Economy,''
+  \emph{Econometrica}, 46, 1429--1445, Available at {
+  \url{http://www.jstor.org/stable/1913837}}.
+
+\end{thebibliography}

@@ -1,0 +1,159 @@
+Notebook[{
+Cell["Lucas Asset Pricing Under CRRA Utility", "Text"],
+
+Cell["IID Dividends", "Text"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"LogNormalDistribution", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"-", 
+      SuperscriptBox["\[Sigma]", "2"]}], "/", "2"}], ",", "\[Sigma]"}], "]"}],
+   ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[DoubleStruckCapitalE]d", " ", "=", " ", 
+   RowBox[{"Expectation", "[", 
+    RowBox[{"dtpn", ",", 
+     RowBox[{"dtpn", " ", "\[Distributed]", " ", 
+      RowBox[{"LogNormalDistribution", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", 
+          SuperscriptBox["\[Sigma]", "2"]}], "/", "2"}], ",", "\[Sigma]"}], 
+       "]"}]}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[DoubleStruckCapitalE]dTo1m\[Rho]", " ", "=", " ", 
+   RowBox[{"Expectation", "[", 
+    RowBox[{
+     SuperscriptBox["dtpn", 
+      RowBox[{"(", 
+       RowBox[{"1", "-", "\[Rho]"}], ")"}]], ",", 
+     RowBox[{"dtpn", " ", "\[Distributed]", " ", 
+      RowBox[{"LogNormalDistribution", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", 
+          SuperscriptBox["\[Sigma]", "2"]}], "/", "2"}], ",", "\[Sigma]"}], 
+       "]"}]}]}], "]"}]}], ";"}], "\[IndentingNewLine]"}], "Input"],
+
+Cell[BoxData[
+ SuperscriptBox["\[ExponentialE]", 
+  RowBox[{
+   FractionBox["1", "2"], " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"-", "1"}], "+", "\[Rho]"}], ")"}], " ", "\[Rho]", " ", 
+   SuperscriptBox["\[Sigma]", "2"]}]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[""], "Input"],
+
+Cell[BoxData["1"], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"\[Theta]", "=", "0.1"}], ";", 
+  RowBox[{"\[Sigma]", "=", "0.2"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{"-", 
+    RowBox[{"Log", "[", 
+     RowBox[{"\[Theta]", "-", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"1", "/", "2"}], ")"}], "\[Rho]", 
+       RowBox[{"(", 
+        RowBox[{"\[Rho]", "-", "1"}], ")"}], 
+       RowBox[{"\[Sigma]", "^", "2"}]}]}], "]"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\[Rho]", ",", "1.01", ",", "3"}], "}"}]}], "]"}]}], "Input"],
+
+Cell[BoxData[
+ GraphicsBox[{{}, {}, 
+   {RGBColor[0.368417, 0.506779, 0.709798], AbsoluteThickness[1.6], Opacity[
+    1.], LineBox[CompressedData["
+1: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
+aBHCMvIXUdBrgifiFJH4rRD/AzXmxYc=
+     "]]}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{True, True},
+  AxesLabel->{None, None},
+  AxesOrigin->{1., 2.2},
+  DisplayFunction->Identity,
+  Frame->{{False, False}, {False, False}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  Method->{"DefaultBoundaryStyle" -> Automatic, "ScalingFunctions" -> None},
+  PlotRange->{{1.01, 3}, {2.3046071442473517`, 5.214333482696651}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.05], 
+     Scaled[0.05]}},
+  Ticks->{Automatic, Automatic}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["\[Rho]"], "Input"],
+
+Cell[BoxData["\[Rho]"], "Output"]
+}, Open  ]]
+},
+WindowSize->{808, 752},
+WindowMargins->{{-1364, Automatic}, {Automatic, 0}},
+FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (December 4, \
+2014)",
+StyleDefinitions->"Default.nb"
+]
+
