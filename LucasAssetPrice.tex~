@@ -1,6 +1,5 @@
 \input{./.econtexRoot}\documentclass{\handout}
-\usepackage{econark}
-\usepackage{\handoutShortcuts}\usepackage{\handoutSetup}
+\usepackage{\handoutSetup}\usepackage{\handoutShortcuts}
 \usepackage{\LaTeXInputs/texname}
 \newcommand{\texname}{LucasAssetPrice}
 % \documentclass{handout}
@@ -8,14 +7,6 @@
 % \begin{comment} % By CDC, first draft while walking dogs, on the occasion of reading Sargent's lecture notes praising the Lucas model as "beautiful"
 
 \begin{document}
-
-% \handoutSetup
-
-% \handoutShortcuts
-
-% \LaTeXInputs
-% \end{document}
-
 \handoutHeader
 
 \begin{verbatimwrite}{\jobname.title}
@@ -27,8 +18,6 @@ The Lucas Asset Pricing Model
 \section{Introduction/Setup}
 
 (See \href{https://econ-ark.org/materials/lucas-asset-price-model?launch}{Lucas-Asset-Price-Model} for a notebook that solves the model numerically).
-
-\end{document}
 
 \cite{lucas:assetpricing} considers an economy populated by infinitely many\footnote{As in \Aggregation.}  identical individual consumers, in which the only assets are a set of identical infinitely-lived trees.  Aggregate output is the fruit that falls from the trees, and cannot be stored (it would rot!); because $\uFunc^{\prime}(\cRat)>0~\forall~\cRat > 0$, the fruit is all eaten:
 \begin{equation}\begin{gathered}\begin{aligned}
