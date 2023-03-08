@@ -19,6 +19,7 @@ The Lucas Asset Pricing Model
 
 \handoutNameMake
 
+\hypertarget{introduction-setup}{}
 \section{Introduction/Setup}
 
 (See \href{https://econ-ark.org/materials/lucas-asset-price-model?launch}{Lucas-Asset-Price-Model} for a notebook that solves the model numerically).
@@ -31,7 +32,7 @@ where $\cRat_{t}$ is consumption of fruit per person, $\Pop_{t}$ is the populati
 
 An economy like this, in which output arrives without any deliberate actions on the part of residents, is called an `endowment' economy (or, sometimes, an `exchange' economy).\footnote{The alternative is a `production' economy, in which factors of production -- labor, capital, maybe land, maybe knowledge -- combine somehow to generate the output.  There is no consensus about the best way to construct production economies with asset pricing.}  \opt{\marginpar{\tiny Market for buying and selling trees by individual consumers.}}{} \opt{\marginpar{\tiny Model requires mental gymnastics: lots of identical individual consumers must be satisfied.}}{}
 
-\hypertarget{The-Market-for-Trees}{}
+\hypertarget{the-market-for-trees}{}
 \section{The Market for Trees}
 
 If there is a perfect capital market for trees, the price of trees $\Price_{t}$ must be such that, each period, each (identical) consumer does not want either to increase or to decrease their holding of trees.\footnote{If, at a hypothesized equilibrium price, every identical consumer wanted (say) to increase their holdings, that price could not be an equilibrium price, because with a fixed supply of trees everyone cannot increase their holding of trees at once!}
@@ -42,6 +43,7 @@ If a tree is sold, the sale is assumed to occur after the existing owner receive
 \\      \kap_{t+1}^{i} & =  (1+\dvdnd_{t}/\Price_{t})\kap_{t}^{i}-c_{t}^{i}/\Price_{t}.
 \end{aligned}\end{gathered}\end{equation}
 
+\hypertarget{the-problem-of-an-individual-consumer}{}
 \section{The Problem of an Individual Consumer}
 Consumer $i$ maximizes 
 \begin{equation}\begin{gathered}\begin{aligned}
@@ -84,6 +86,7 @@ The \handoutC{Envelope} theorem tells us that  $\vFunc^{\prime}({m}_{t+1}^{i})=\
 \end{aligned}\end{gathered}\end{equation}
 \end{verbatimwrite}
 \input{./Equations/LAP_pofci.tex}
+\hypertarget{aggregation}{}
 \section{Aggregation}
 
 Since all consumers are identical, $c_{t}^{i} = c_{t}^{j}~\forall~i,j$, so henceforth we just call consumption per capita $\cRat_{t}$.  Since aggregate consumption must equal aggregate production because fruit cannot be stored, normalizing the population to $\Pop_{t}=1 ~\forall ~ t$ and the stock of trees to $\Kap_{t}=1 ~\forall~t$, equation \eqref{eq:CeqY} becomes:
@@ -142,7 +145,7 @@ given this, and noting that $\SDF_{t,t+2} = \SDF_{t,t+1}\SDF_{t+1,t+2}$, \eqref{
 
 So, the price of the asset is the present discounted value of the stream of future `dividends,' where the stochastic factor by which (potentially stochastic) dividends received in $t+n$ are discounted back to $t$ is $\SDF_{t,t+n}$.\footnote{The assumption that all consumers are identical here is important; heterogeneity in much of anything (wealth, income processes, along with an assumption that each consumer has only a finite amount of wealth and a finite horizon, will destroy the implication that there is a single unique SDF that all agents use to discount the future).}
 
-
+\hypertarget{specializing-the-model}{}
 \section{Specializing the Model}
 % Rework for CRRA throughout
 
@@ -190,6 +193,7 @@ The above derivation says that intuition is wrong: Today's price depends only on
 
 Nevertheless, the logic (higher future output is a reason for higher current prices) is not wrong; but it is (exactly) counterbalanced by another, and subtler, fact: Since future consumption will equal future fruit output, higher expected fruit output means lower marginal utility of consumption in that future period of (more) abundant fruit (basically, people are starving today, which reduces the attractiveness of cutting their consumption to buy trees that will produce more in a period when they expect \textit{not} to be starving).  These two forces are the manifestation of the (pure) income effect and substitution effect in this model (there is no human wealth, and therefore no human wealth effect).  In our assumed special case of logarithmic utility, income and substitution effects are of the same size and opposite sign so the two forces exactly offset.
 
+\hypertarget{the-rate-of-return-in-a-lucas-model}{}
 \section{The `Rate of Return' in a Lucas Model}
 We can decompose the return factor attributable to ownership of a share of capital (cf.\ \eqref{eq:FOCwithRisky}) by adding and subtracting $\Price_{t}$ in the numerator:
 \begin{equation}\begin{gathered}\begin{aligned}
@@ -216,6 +220,7 @@ like machines,\footnote{The key insights below remain true even if there is a gr
 says that the only risk in the rate of return is attributable to unpredictable variation in the size of 
 dividend/interest payments.  Indeed, if additional assumptions are made (e.g., perfect capital markets) that yield the conclusion that the interest rate matches the marginal product of capital, then such models generally imply that variation in returns (at least at high frequencies) is very small, because aggregate capital typically is very stable from one period to the next; if the aggregate production function is stable, this implies great stability in the marginal product of capital.
 
+\hypertarget{aggregate-returns-versus-individual-returns}{}
 \section{Aggregate Returns Versus Individual Returns}
 
 One of the subtler entries in \cite{aristotleFallacies}'s catalog of common human reasoning errors was the `fallacy of composition,' in which the reasoner supposes that if a proposition is true of each element of a whole, then it must be true of the whole.
@@ -226,6 +231,7 @@ The proposition that the return for society as a whole must be the same as the r
 
 Aristotle was a smart guy!
 
+\hypertarget{a-surprise}{}
 \section{A Surprise}
 
 In the case where dividends are identically individually lognormally distributed, $\log \dvdnd_{t+1} \sim \mathcal{N}(-\riskyvar/2,\riskyvar)$, the appendix shows that
@@ -252,6 +258,7 @@ Given that $\CRRA > 1$, this derivation yields some interesting insights:
 
 The second point is surprising; \href{https://chat.openai.com/chat}{ChatGPT} correctly summarizes the usual received wisdom about risk aversion by saying ``In general, an increase in risk aversion can cause a decrease in the overall stock market ...''\footnote{\textit{``When risk aversion increases, investors tend to be more cautious and prefer safer investments over riskier ones, such as stocks. As a result, there is a decrease in demand for stocks, which leads to a decrease in their prices.  In general, an increase in risk aversion can cause a decrease in the overall stock market, as investors sell off their shares to move their money into safer investments, such as bonds or cash. This can result in a downward trend in the stock market indices. However, it's important to note that the impact of risk aversion on the stock market can be complex and multifaceted, and there are many other factors that can influence the stock market as well. For example, government policies, economic data, and news events can all have a significant impact on the stock market, regardless of the level of risk aversion among investors.''} -- \href{https://help.openai.com/en/articles/6825453-chatgpt-release-notes}{ChatGPT version 2022-02-13}}  The reason for this prediction is intuitive: an increase in risk aversion makes people want the risky asset less, and if they want it less one would think that the price should be lower.  But no: an \textit{increase} in risk aversion \textit{increases} the price of the risky asset.   The resolution of this conflict between ChatGPT and Lucas comes from realizing that the usual model (ChatGPT will always summarize `the usual model') is one in which investors have access to a safe asset as well as a risky one, while in the Lucas model presented here the \textit{only} asset available is risky.  
 
+\hypertarget{analytical-and-numerical-solutions}{}
 \section{Analytical and Numerical Solutions}
 
 The appendices derive various results about the solution to the model under
@@ -270,6 +277,7 @@ how the numerical solution compares with the approximate analytical solution in 
 
 \medskip\medskip\medskip
 
+\hypertarget{when-dividends-are-IID}{}
 \section{When Dividends are IID}
 \newcommand{\dCRRAoverP}{\delta}
 \newcommand{\PoverdCRRA}{\delta^{-1}}
@@ -328,6 +336,7 @@ So the log is
 \input{./Equations/LAP_PtLogIID.tex}
 as asserted in the main text.
 
+\hypertarget{when-dividends-follow-a-random-walk}{}
 \section{When Dividends Follow a Random Walk}
 
 The polar alternative to IID shocks would be for dividends to follow a random walk: $\log (\dvdnd_{t+1}/\dvdnd_{t}) \sim \mathcal{N}(-\riskyvar/2,\riskyvar)$.  (Recall that this assumption implies that the expected arithmetic growth rate for dividends is zero: $\Ex_{t}[\dvdnd_{t+1}/\dvdnd_{t}]=\exp(-\riskyvar/2+\riskyvar/2)=e^{0}=1$; later we will consider the case in which dividends have a positive trend growth rate).
@@ -389,7 +398,6 @@ which indicates that the arithmetic rate of return must be lower than the time p
 %       \end{aligned}\end{gathered}\end{equation}
   
 
-
   This equation seems puzzing because with a low enough time preference rate, and with $\CRRA > 1$ and $\riskyvar > 0$, it could possibly imply that $\dvdnd_{t}/\Price_{t} = \riskyELev < 0$.  If prices are positive, this must mean that dividends are negative - which was ruled out by assumption in the statement of the model (because aggregate consumption is equal to aggregate dividends, and negative $c_{t}$ would yield undefined utility).
 
   What this reveals is that the model has no solution unless people are sufficiently impatient.  (This is another impatience condition like those articulated in \handoutC{PerfForesightCRRA} and \handoutC{TractableBufferStock} -- in this case, you must be impatient enough to want to hold the risky asset despite its riskiness).
@@ -405,12 +413,15 @@ which indicates that the arithmetic rate of return must be lower than the time p
       \end{aligned}\end{gathered}\end{equation}
 and note that by reducing the required rate of return, for any given level of dividends the price must be higher than in the case where $\pGro=0$.  That makes sense: People should be more eager to own shares when dividends are rising than when they are constant.
 
-All of this finally puts us in position to calculate the price from the dividend, which we can do using an updated version of \eqref{eq:PmeanOneLognorm} which incorporates growth:
-\begin{equation}\begin{gathered}\begin{aligned}
+\hypertarget{PLognormGro}{}
+All of this finally puts us in position to calculate the price from the dividend, which we can do using an updated version of \eqref{eq:PmeanOneLognorm} which incorporates growth:\footnote{Note that since $\Price_{t}$ and $\dvdnd_{t}$ and $\pGro$ and $\riskyvar$ are measurable, the formula defines a relationship between $\CRRA$ and $\timeRate$.  If we follow \cite{mehraPrescottPuzzle} in assuming that the time preference rate $\vartheta$ matches the riskfree interest rate at about 0.01, it is possible to calculate $\CRRA$ as the value that causes this equation to fit the data.}
+\begin{equation}\begin{gathered}\begin{aligned}\providecommand{\Price}{\mathsf{P}}\providecommand{\CRRA}{\rho}\providecommand{\dvdnd}{d}\providecommand{\pGro}{\gamma}\providecommand{\riskyvar}{\sigma^{2}}\providecommand{\timeRate}{\vartheta}
   \frac{\Price_{t}}{\dvdnd_{t}^{\CRRA}} 
  & =  \left(\frac{e^{\CRRA(\pGro+(\CRRA-1)\riskyvar/2)}}{\timeRate}\right)\label{eq:PLognormGro}
-% \\ \Price_{t} & =  \left(\frac{\dvdnd_{t}^{\CRRA} e^{\CRRA(\pGro+(\CRRA-1)\riskyvar/2)}}{\timeRate}\right) 
- \\ \log \Price_{t} & =  \CRRA \log \dvdnd_{t} + \CRRA(\pGro+(\CRRA-1)\riskyvar/2)- \log \timeRate 
+\end{aligned}\end{gathered}\end{equation}
+the log of which is\hypertarget{logprice}{}
+\begin{equation}\begin{gathered}\begin{aligned}\providecommand{\Price}{\mathsf{P}}\providecommand{\CRRA}{\rho}\providecommand{\dvdnd}{d}\providecommand{\pGro}{\gamma}\providecommand{\riskyvar}{\sigma^{2}}\providecommand{\timeRate}{\vartheta}
+  \log \Price_{t} & =  \CRRA \log \dvdnd_{t} + \CRRA(\pGro+(\CRRA-1)\riskyvar/2)- \log \timeRate 
 \end{aligned}\end{gathered}\end{equation}
 from which we can directly read off the following propositions:
 \medskip
@@ -439,7 +450,8 @@ from which we can directly read off the following propositions:
 
 \begin{comment}
   % 20201104: The stuff below is wrong because the assumption was that dividends follow an AR(1) in LEVELS which is crazy
-\section{When Dividends Follow an AR(1) Process}
+\hypertarget{when-dividends-follow-an-ar1-process}{}
+  \section{When Dividends Follow an AR(1) Process}
 
 Start with \eqref{eq:pofdCRRAWdvdndGro}:
 \input {./Equations/LAP_pofdCRRAWdvdndGro.tex}

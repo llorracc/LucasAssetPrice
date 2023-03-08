@@ -1,4 +1,5 @@
 \:CrossWord{)F1F-}{LucasAssetPrice.html}{1}%
+\:CrossWord{)Qintroduction-setup}{1}{1}%
 \:CrossWord{)Qx1-10001}{1}{1}%
 \:CrossWord{fn1x0}{}{1}%
 \:CrossWord{)Qx1-1001f1}{1}{1}%
@@ -19,7 +20,7 @@
 \:CrossWord{)F4F-}{LucasAssetPrice4.html}{2}%
 \:CrossWord{LucasAssetPrice4.html(L }{LucasAssetPrice4.html}{2}%
 \:CrossWord{)Qfn3x0}{4}{2}%
-\:CrossWord{)QThe-Market-for-Trees}{1}{2}%
+\:CrossWord{)Qthe-market-for-trees}{1}{2}%
 \:CrossWord{)Qx1-20002}{1}{2}%
 \:CrossWord{fn4x0}{}{2}%
 \:CrossWord{)Qx1-2001f4}{1}{2}%
@@ -28,6 +29,7 @@
 \:CrossWord{LucasAssetPrice5.html(L }{LucasAssetPrice5.html}{2}%
 \:CrossWord{)Qfn4x0}{5}{2}%
 \:CrossWord{)Qx1-2002r2}{1}{2}%
+\:CrossWord{)Qthe-problem-of-an-individual-consumer}{1}{3}%
 \:CrossWord{)Qx1-30003}{1}{3}%
 \:CrossWord{)Qx1-3001r3}{1}{3}%
 \:CrossWord{)Qx1-3001r2}{1}{3}%
@@ -37,6 +39,7 @@
 \:CrossWord{)Qx1-3003r4}{1}{4}%
 \:CrossWord{)Qpofci}{1}{5}%
 \:CrossWord{)Qx1-3004r5}{1}{5}%
+\:CrossWord{)Qaggregation}{1}{5}%
 \:CrossWord{)Qx1-40004}{1}{5}%
 \:CrossWord{)Qx1-4001r6}{1}{6}%
 \:CrossWord{)Qpofd}{1}{6}%
@@ -53,11 +56,13 @@
 \:CrossWord{)F6F-}{LucasAssetPrice6.html}{9}%
 \:CrossWord{LucasAssetPrice6.html(L }{LucasAssetPrice6.html}{9}%
 \:CrossWord{)Qfn5x0}{6}{9}%
+\:CrossWord{)Qspecializing-the-model}{1}{9}%
 \:CrossWord{)Qx1-50005}{1}{9}%
 \:CrossWord{)Qx1-5001r13}{1}{9}%
 \:CrossWord{)Qx1-50005}{1}{10}%
 \:CrossWord{)Qx1-5002r14}{1}{11}%
 \:CrossWord{)Qx1-5002r13}{1}{11}%
+\:CrossWord{)Qthe-rate-of-return-in-a-lucas-model}{1}{12}%
 \:CrossWord{)Qx1-60006}{1}{12}%
 \:CrossWord{)Qx1-6001r14}{1}{12}%
 \:CrossWord{)Qx1-6001r13}{1}{12}%
@@ -68,7 +73,9 @@
 \:CrossWord{)F7F-}{LucasAssetPrice7.html}{13}%
 \:CrossWord{LucasAssetPrice7.html(L }{LucasAssetPrice7.html}{13}%
 \:CrossWord{)Qfn6x0}{7}{13}%
+\:CrossWord{)Qaggregate-returns-versus-individual-returns}{1}{14}%
 \:CrossWord{)Qx1-70007}{1}{14}%
+\:CrossWord{)Qa-surprise}{1}{15}%
 \:CrossWord{)Qx1-80008}{1}{15}%
 \:CrossWord{)Qx1-8001r15}{1}{15}%
 \:CrossWord{)Qx1-8002r16}{1}{15}%
@@ -80,7 +87,9 @@
 \:CrossWord{)F8F-}{LucasAssetPrice8.html}{16}%
 \:CrossWord{LucasAssetPrice8.html(L }{LucasAssetPrice8.html}{16}%
 \:CrossWord{)Qfn7x0}{8}{16}%
+\:CrossWord{)Qanalytical-and-numerical-solutions}{1}{16}%
 \:CrossWord{)Qx1-90009}{1}{17}%
+\:CrossWord{)Qwhen-dividends-are-IID}{1}{18}%
 \:CrossWord{)Qx1-10000A}{1}{18}%
 \:CrossWord{)Qx1-10001r17}{1}{18}%
 \:CrossWord{)Qx1-10002r18}{1}{18}%
@@ -95,6 +104,7 @@
 \:CrossWord{)Qx1-10006r21}{1}{20}%
 \:CrossWord{)Qx1-10007r22}{1}{21}%
 \:CrossWord{)Qx1-10008r23}{1}{21}%
+\:CrossWord{)Qwhen-dividends-follow-a-random-walk}{1}{22}%
 \:CrossWord{)Qx1-11000B}{1}{22}%
 \:CrossWord{)Qx1-11001r24}{1}{22}%
 \:CrossWord{)Qx1-11002r25}{1}{23}%
@@ -102,10 +112,20 @@
 \:CrossWord{)Qx1-11004r27}{1}{24}%
 \:CrossWord{)Qx1-11005r28}{1}{25}%
 \:CrossWord{)Qx1-11006r29}{1}{25}%
-\:CrossWord{)Qx1-11007r30}{1}{26}%
-\:CrossWord{)Qx1-11009x1}{1}{26}%
-\:CrossWord{)Qx1-11011x2}{1}{26}%
-\:CrossWord{)Qx1-11013x3}{1}{27}%
+\:CrossWord{)QPLognormGro}{1}{26}%
+\:CrossWord{fn9x0}{}{26}%
+\:CrossWord{)Qx1-11007f9}{1}{26}%
+\:CrossWord{)BLucasAssetPrice10.html(L }{LucasAssetPrice.html}{26}%
+\:CrossWord{)F10F-}{LucasAssetPrice10.html}{26}%
+\:CrossWord{LucasAssetPrice10.html(L }{LucasAssetPrice10.html}{26}%
+\:CrossWord{)Qfn9x0}{10}{26}%
+\:CrossWord{)Qx1-11008r30}{1}{26}%
+\:CrossWord{)Qlogprice}{1}{26}%
+\:CrossWord{)Qx1-11009r31}{1}{26}%
+\:CrossWord{)Qx1-11011x1}{1}{27}%
+\:CrossWord{)Qx1-11013x2}{1}{27}%
+\:CrossWord{)Qx1-11015x3}{1}{27}%
 \:CrossWord{)Qx1-12000B}{1}{27}%
-\:CrossWord{)QXaristotleFallacies}{1}{27}%
-\:CrossWord{)QXlucas:assetpricing}{1}{27}%
+\:CrossWord{)QXaristotleFallacies}{1}{28}%
+\:CrossWord{)QXlucas:assetpricing}{1}{28}%
+\:CrossWord{)QXmehraPrescottPuzzle}{1}{28}%

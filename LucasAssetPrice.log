@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.3.25)  6 MAR 2023 23:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.3.25)  7 MAR 2023 20:14
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1081,7 +1081,7 @@ File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 
 (./LucasAssetPrice.title)
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
-6.
+7.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
@@ -1094,7 +1094,7 @@ File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
  identifier (name{equation.3.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.90 \begin{equation}
+l.93 \begin{equation}
                      \begin{gathered}\begin{aligned}]
 \openout4 = `./Equations/LAP_pofd.tex'.
 
@@ -1120,23 +1120,23 @@ l.90 \begin{equation}
 
  (./Equations/LAP_pWithLogU.tex) [4]
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 196.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 200.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 196.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 200.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <8> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 196.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 200.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <6> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 196.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 200.
 
 [5pdfTeX warning (ext4): destination with the same identifier (name{equation.6.
 14}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.223 T
+l.228 T
        he Lucas model provides a counterexample.  From the standpoint of any...
 ] [6] [7] [8]
 \openout4 = `./Equations/LAP_PtLogIID.tex'.
@@ -1158,6 +1158,18 @@ Class scrartcl Warning: Incompatible usage of \@ssect detected.
 (scrartcl)              This could result in several error messages on input li
 ne 2.
 
+
+Underfull \hbox (badness 3826) in paragraph at lines 23--30
+[]\T1/cmr/m/n/12 Rajnish Mehra and Ed-ward C. Prescott.  The eq-uity pre-mium: 
+A puz-
+ []
+
+
+Underfull \hbox (badness 5878) in paragraph at lines 23--30
+\T1/cmr/m/n/12 zle.  \T1/cmr/m/it/12 Jour-nal of Mon-e-tary Eco-nomics\T1/cmr/m
+/n/12 , 15:145--61, 1985.  URL [][]$\T1/cmtt/m/n/12 http :
+ []
+
 ) [11
 runsystem(if [ ! -f LucasAssetPrice.bib ]; then touch LucasAssetPrice.bib ; fi)
 ...executed.
@@ -1175,10 +1187,10 @@ Package rerunfilecheck Info: File `LucasAssetPrice.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 22376 strings out of 478994
- 401259 string characters out of 5858184
- 875768 words of memory out of 5000000
- 39279 multiletter control sequences out of 15000+600000
+ 22394 strings out of 478994
+ 401674 string characters out of 5858184
+ 875805 words of memory out of 5000000
+ 39282 multiletter control sequences out of 15000+600000
  431618 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  129i,30n,133p,10668b,424s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1197,30 +1209,32 @@ xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/te
 xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
 ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texliv
 e/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2
-021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2021
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2021/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2021/texmf
--dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2021/texmf-
-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2021/te
-xmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/202
-1/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/local/texlive/2021/
-texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2021/te
-xmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2021/texm
-f-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2021/texmf-
-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2021/texmf-di
-st/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2021/texmf-dist
-/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2021/texmf-dist/f
-onts/type1/public/cm-super/sfsx1728.pfb></usr/local/texlive/2021/texmf-dist/fon
-ts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2021/texmf-dist/fonts
-/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/t
-ype1/public/cm-super/sftt1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/typ
-e1/public/cm-super/sftt1200.pfb>
-Output written on LucasAssetPrice.pdf (11 pages, 439215 bytes).
+021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2021
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2021/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2021/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2021/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2021/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2021/texmf-dist
+/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2021/texmf-
+dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2021/te
+xmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/local/texlive/2021/texm
+f-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2021/texmf-
+dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2021/texmf-di
+st/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2021/texmf-dist
+/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2021/texmf-dist/f
+onts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2021/texmf-dist/fon
+ts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2021/texmf-dist/fonts
+/type1/public/cm-super/sfsx1728.pfb></usr/local/texlive/2021/texmf-dist/fonts/t
+ype1/public/cm-super/sfti1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/typ
+e1/public/cm-super/sfti1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1
+/public/cm-super/sftt1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/p
+ublic/cm-super/sftt1200.pfb>
+Output written on LucasAssetPrice.pdf (11 pages, 460039 bytes).
 PDF statistics:
- 352 PDF objects out of 1000 (max. 8388607)
- 302 compressed objects within 4 object streams
- 76 named destinations out of 1000 (max. 500000)
+ 387 PDF objects out of 1000 (max. 8388607)
+ 335 compressed objects within 4 object streams
+ 91 named destinations out of 1000 (max. 500000)
  89 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -5,44 +5,44 @@ The style file: plainnat.bst
 Database file #1: economics.bib
 Database file #2: LucasAssetPrice.bib
 Database file #3: LucasAssetPrice-Add.bib
-You've used 2 entries,
+You've used 3 entries,
             2773 wiz_defined-function locations,
-            609 strings with 5230 characters,
-and the built_in function-call counts, 756 in all, are:
-= -- 67
-> -- 20
-< -- 2
-+ -- 8
-- -- 6
-* -- 49
-:= -- 124
-add.period$ -- 8
-call.type$ -- 2
-change.case$ -- 7
-chr.to.int$ -- 2
-cite$ -- 4
-duplicate$ -- 40
-empty$ -- 74
-format.name$ -- 8
-if$ -- 152
+            620 strings with 5569 characters,
+and the built_in function-call counts, 1225 in all, are:
+= -- 115
+> -- 41
+< -- 3
++ -- 15
+- -- 12
+* -- 85
+:= -- 198
+add.period$ -- 14
+call.type$ -- 3
+change.case$ -- 12
+chr.to.int$ -- 3
+cite$ -- 6
+duplicate$ -- 60
+empty$ -- 112
+format.name$ -- 17
+if$ -- 253
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 3
-newline$ -- 21
-num.names$ -- 8
-pop$ -- 17
+missing$ -- 4
+newline$ -- 29
+num.names$ -- 12
+pop$ -- 22
 preamble$ -- 2
-purify$ -- 6
+purify$ -- 10
 quote$ -- 0
-skip$ -- 24
+skip$ -- 40
 stack$ -- 0
-substring$ -- 35
-swap$ -- 3
+substring$ -- 55
+swap$ -- 4
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 17
+type$ -- 28
 warning$ -- 0
-while$ -- 8
+while$ -- 12
 width$ -- 0
-write$ -- 37
+write$ -- 56
