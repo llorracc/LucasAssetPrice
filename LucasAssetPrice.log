@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.3.25)  7 MAR 2023 20:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.3.25)  10 MAR 2023 11:11
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1159,13 +1159,13 @@ Class scrartcl Warning: Incompatible usage of \@ssect detected.
 ne 2.
 
 
-Underfull \hbox (badness 3826) in paragraph at lines 23--30
+Underfull \hbox (badness 3826) in paragraph at lines 23--28
 []\T1/cmr/m/n/12 Rajnish Mehra and Ed-ward C. Prescott.  The eq-uity pre-mium: 
 A puz-
  []
 
 
-Underfull \hbox (badness 5878) in paragraph at lines 23--30
+Underfull \hbox (badness 5878) in paragraph at lines 23--28
 \T1/cmr/m/n/12 zle.  \T1/cmr/m/it/12 Jour-nal of Mon-e-tary Eco-nomics\T1/cmr/m
 /n/12 , 15:145--61, 1985.  URL [][]$\T1/cmtt/m/n/12 http :
  []
@@ -1231,10 +1231,10 @@ ype1/public/cm-super/sfti1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/typ
 e1/public/cm-super/sfti1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1
 /public/cm-super/sftt1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/p
 ublic/cm-super/sftt1200.pfb>
-Output written on LucasAssetPrice.pdf (11 pages, 460039 bytes).
+Output written on LucasAssetPrice.pdf (11 pages, 459953 bytes).
 PDF statistics:
- 387 PDF objects out of 1000 (max. 8388607)
- 335 compressed objects within 4 object streams
+ 385 PDF objects out of 1000 (max. 8388607)
+ 333 compressed objects within 4 object streams
  91 named destinations out of 1000 (max. 500000)
  89 words of extra memory for PDF output out of 10000 (max. 10000000)
 

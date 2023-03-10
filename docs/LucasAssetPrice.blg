@@ -7,16 +7,16 @@ Database file #2: LucasAssetPrice.bib
 Database file #3: LucasAssetPrice-Add.bib
 You've used 3 entries,
             2773 wiz_defined-function locations,
-            620 strings with 5569 characters,
-and the built_in function-call counts, 1225 in all, are:
-= -- 115
+            619 strings with 5488 characters,
+and the built_in function-call counts, 1216 in all, are:
+= -- 113
 > -- 41
 < -- 3
 + -- 15
 - -- 12
 * -- 85
-:= -- 198
-add.period$ -- 14
+:= -- 196
+add.period$ -- 13
 call.type$ -- 3
 change.case$ -- 12
 chr.to.int$ -- 3
@@ -24,13 +24,13 @@ cite$ -- 6
 duplicate$ -- 60
 empty$ -- 112
 format.name$ -- 17
-if$ -- 253
+if$ -- 251
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 4
-newline$ -- 29
+newline$ -- 28
 num.names$ -- 12
-pop$ -- 22
+pop$ -- 23
 preamble$ -- 2
 purify$ -- 10
 quote$ -- 0
@@ -45,4 +45,4 @@ type$ -- 28
 warning$ -- 0
 while$ -- 12
 width$ -- 0
-write$ -- 56
+write$ -- 54
