@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=latex 2021.3.25)  14 MAR 2023 18:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=latex 2021.3.25)  14 MAR 2023 19:47
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1755,8 +1755,8 @@ l. 41 Writing LucasAssetPrice.idv[21] (LucasAssetPrice20x.svg)
 ]
 l. 48 Writing LucasAssetPrice.idv[22] (LucasAssetPrice21x.svg)
 l. 49 Writing LucasAssetPrice.idv[23] (LucasAssetPrice22x.svg)
-l. 57 Writing LucasAssetPrice.idv[24] (LucasAssetPrice23x.svg)
 [3]
+l. 57 Writing LucasAssetPrice.idv[24] (LucasAssetPrice23x.svg)
 l. 63 Writing LucasAssetPrice.idv[25] (LucasAssetPrice24x.svg)
 l. 67 Writing LucasAssetPrice.idv[26] (LucasAssetPrice25x.svg)
 [4]
@@ -1956,28 +1956,29 @@ l. 406 Writing LucasAssetPrice.idv[144] (LucasAssetPrice143x.svg)
 l. 411 Writing LucasAssetPrice.idv[145] (LucasAssetPrice144x.svg)
 [25]
 l. 414 Writing LucasAssetPrice.idv[146] (LucasAssetPrice145x.svg)
+l. 415 Writing LucasAssetPrice.idv[147] (LucasAssetPrice146x.svg)
+l. 416 Writing LucasAssetPrice.idv[148] (LucasAssetPrice147x.svg)
+l. 424 Writing LucasAssetPrice.idv[149] (LucasAssetPrice148x.svg)
+l. 424 Writing LucasAssetPrice.idv[150] (LucasAssetPrice149x.svg)
 --- file LucasAssetPrice10.html ---
-l. 417 Writing LucasAssetPrice.idv[147] (LucasAssetPrice146x.svg)
-l. 417 Writing LucasAssetPrice.idv[148] (LucasAssetPrice147x.svg)
-l. 417 Writing LucasAssetPrice.idv[149] (LucasAssetPrice148x.svg)
-l. 417 Writing LucasAssetPrice.idv[150] (LucasAssetPrice149x.svg)
-l. 417 Writing LucasAssetPrice.idv[151] (LucasAssetPrice150x.svg)
-l. 417 Writing LucasAssetPrice.idv[152] (LucasAssetPrice151x.svg)
-l. 417 Writing LucasAssetPrice.idv[153] (LucasAssetPrice152x.svg)
-l. 417 Writing LucasAssetPrice.idv[154] (LucasAssetPrice153x.svg)
-l. 418 Writing LucasAssetPrice.idv[155] (LucasAssetPrice154x.svg)
-l. 423 Writing LucasAssetPrice.idv[156] (LucasAssetPrice155x.svg)
+l. 427 Writing LucasAssetPrice.idv[151] (LucasAssetPrice150x.svg)
+l. 427 Writing LucasAssetPrice.idv[152] (LucasAssetPrice151x.svg)
+l. 427 Writing LucasAssetPrice.idv[153] (LucasAssetPrice152x.svg)
+l. 427 Writing LucasAssetPrice.idv[154] (LucasAssetPrice153x.svg)
+l. 427 Writing LucasAssetPrice.idv[155] (LucasAssetPrice154x.svg)
+l. 427 Writing LucasAssetPrice.idv[156] (LucasAssetPrice155x.svg)
+l. 427 Writing LucasAssetPrice.idv[157] (LucasAssetPrice156x.svg)
+l. 427 Writing LucasAssetPrice.idv[158] (LucasAssetPrice157x.svg)
 [26
 
 ]
-l. 429 Writing LucasAssetPrice.idv[157] (LucasAssetPrice156x.svg)
-l. 429 Writing LucasAssetPrice.idv[158] (LucasAssetPrice157x.svg)
-l. 431 Writing LucasAssetPrice.idv[159] (LucasAssetPrice158x.svg)
-l. 432 Writing LucasAssetPrice.idv[160] (LucasAssetPrice159x.svg)
-l. 433 Writing LucasAssetPrice.idv[161] (LucasAssetPrice160x.svg)
+l. 428 Writing LucasAssetPrice.idv[159] (LucasAssetPrice158x.svg)
+l. 435 Writing LucasAssetPrice.idv[160] (LucasAssetPrice159x.svg)
+l. 435 Writing LucasAssetPrice.idv[161] (LucasAssetPrice160x.svg)
 l. 435 Writing LucasAssetPrice.idv[162] (LucasAssetPrice161x.svg)
-l. 435 Writing LucasAssetPrice.idv[163] (LucasAssetPrice162x.svg)
-l. 436 Writing LucasAssetPrice.idv[164] (LucasAssetPrice163x.svg)
+l. 437 Writing LucasAssetPrice.idv[163] (LucasAssetPrice162x.svg)
+l. 438 Writing LucasAssetPrice.idv[164] (LucasAssetPrice163x.svg)
+l. 438 Writing LucasAssetPrice.idv[165] (LucasAssetPrice164x.svg)
 (./LucasAssetPrice.bbl
 
 Class scrartcl Warning: Incompatible usage of \@ssect detected.
@@ -2005,12 +2006,12 @@ ib ; fi)...executed.
 Dependency list written on LucasAssetPrice.dep.
  ) 
 Here is how much of TeX's memory you used:
- 26145 strings out of 478995
- 441165 string characters out of 5858210
- 973628 words of memory out of 5000000
- 42555 multiletter control sequences out of 15000+600000
+ 26142 strings out of 478995
+ 441121 string characters out of 5858210
+ 973619 words of memory out of 5000000
+ 42552 multiletter control sequences out of 15000+600000
  430277 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 125i,32n,130p,11145b,584s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 125i,32n,130p,11145b,587s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on LucasAssetPrice.dvi (28 pages, 127744 bytes).
+Output written on LucasAssetPrice.dvi (28 pages, 128240 bytes).

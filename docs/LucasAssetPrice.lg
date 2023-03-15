@@ -291,7 +291,7 @@ Css: td.equation { margin-top:5em; margin-bottom:5em; }
 --- needs --- LucasAssetPrice.idv[8] ==> LucasAssetPrice4x.svg ---
 --- needs --- LucasAssetPrice.idv[9] ==> LucasAssetPrice5x.svg ---
 --- needs --- LucasAssetPrice.idv[10] ==> LucasAssetPrice6x.svg ---
---- needs --- LucasAssetPrice.idv[11] ==> LucasAssetPrice7x.svg ---
+--- needs --- LucasAssetPrice.idv[12] ==> LucasAssetPrice7x.svg ---
 --- needs --- LucasAssetPrice.idv[13] ==> LucasAssetPrice8x.svg ---
 --- needs --- LucasAssetPrice.idv[14] ==> LucasAssetPrice9x.svg ---
 --- needs --- LucasAssetPrice.idv[15] ==> LucasAssetPrice10x.svg ---
@@ -436,18 +436,19 @@ Css: td.equation { margin-top:5em; margin-bottom:5em; }
 --- needs --- LucasAssetPrice.idv[207] ==> LucasAssetPrice149x.svg ---
 --- needs --- LucasAssetPrice.idv[208] ==> LucasAssetPrice150x.svg ---
 --- needs --- LucasAssetPrice.idv[209] ==> LucasAssetPrice151x.svg ---
---- needs --- LucasAssetPrice.idv[211] ==> LucasAssetPrice152x.svg ---
---- needs --- LucasAssetPrice.idv[212] ==> LucasAssetPrice153x.svg ---
---- needs --- LucasAssetPrice.idv[213] ==> LucasAssetPrice154x.svg ---
---- needs --- LucasAssetPrice.idv[215] ==> LucasAssetPrice155x.svg ---
---- needs --- LucasAssetPrice.idv[217] ==> LucasAssetPrice156x.svg ---
---- needs --- LucasAssetPrice.idv[218] ==> LucasAssetPrice157x.svg ---
---- needs --- LucasAssetPrice.idv[219] ==> LucasAssetPrice158x.svg ---
+--- needs --- LucasAssetPrice.idv[210] ==> LucasAssetPrice152x.svg ---
+--- needs --- LucasAssetPrice.idv[211] ==> LucasAssetPrice153x.svg ---
+--- needs --- LucasAssetPrice.idv[212] ==> LucasAssetPrice154x.svg ---
+--- needs --- LucasAssetPrice.idv[213] ==> LucasAssetPrice155x.svg ---
+--- needs --- LucasAssetPrice.idv[215] ==> LucasAssetPrice156x.svg ---
+--- needs --- LucasAssetPrice.idv[216] ==> LucasAssetPrice157x.svg ---
+--- needs --- LucasAssetPrice.idv[218] ==> LucasAssetPrice158x.svg ---
 --- needs --- LucasAssetPrice.idv[220] ==> LucasAssetPrice159x.svg ---
 --- needs --- LucasAssetPrice.idv[221] ==> LucasAssetPrice160x.svg ---
 --- needs --- LucasAssetPrice.idv[222] ==> LucasAssetPrice161x.svg ---
 --- needs --- LucasAssetPrice.idv[223] ==> LucasAssetPrice162x.svg ---
 --- needs --- LucasAssetPrice.idv[224] ==> LucasAssetPrice163x.svg ---
+--- needs --- LucasAssetPrice.idv[225] ==> LucasAssetPrice164x.svg ---
 --- characters ---
 Font("cmr","7","7","100")
 Font("cmr","10","10","100")

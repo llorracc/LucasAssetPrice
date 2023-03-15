@@ -22,7 +22,7 @@ The Lucas Asset Pricing Model
 \hypertarget{introduction-setup}{}
 \section{Introduction/Setup}
 
-(See \href{https://econ-ark.org/materials/LucasAssetPrice?launch}{LucasAssetPrice} for a notebook that solves the model numerically).
+(See \href{https://econ-ark.org/materials/lucas-asset-pricing-model?launch}{Lucas-Asset-Pricing-Model} for a notebook that solves the model numerically).
 
 \cite{lucas:assetpricing} considers an economy populated by infinitely many\footnote{As in \Aggregation.}  identical individual consumers, in which the only assets are a set of identical infinitely-lived trees.  Aggregate output is the fruit that falls from the trees, and cannot be stored (it would rot!); because $\uFunc^{\prime}(\cRat)>0~\forall~\cRat > 0$, the fruit is all eaten:
 \begin{equation}\begin{gathered}\begin{aligned}
@@ -402,39 +402,40 @@ which indicates that the arithmetic rate of return must be lower than the time p
 
   What this reveals is that the model has no solution unless people are sufficiently impatient.  (This is another impatience condition like those articulated in \handoutC{PerfForesightCRRA} and \handoutC{TractableBufferStock} -- in this case, you must be impatient enough to want to hold the risky asset despite its riskiness).
   
-  Recall our earlier assumption that $\edvdnd=1$; that is, the arithmetic growth rate of dividends is zero.  If, instead, dividends had a positive growth factor $\PGro=e^{\pGro}\approx 1+\pGro$, the consequence is that a further subtraction from $\timeRate$ is $\CRRA \pGro$:
+  Recall our earlier assumption that $\edvdnd=1$; that is, the arithmetic growth rate of dividends is zero.  If, instead, dividends had a positive growth factor $\PGro=e^{\pGro}\approx 1+\pGro$, the consequence is that a further subtraction from $\timeRate$ is $(1-\CRRA) \pGro$:
   \begin{equation}\begin{gathered}\begin{aligned}
-      \riskyELev & \approx \timeRate - \CRRA \pGro -\CRRA (\CRRA-1)\riskyvar/2
+      \riskyELev & \approx \timeRate + (\CRRA-1) \pGro -\CRRA (\CRRA-1)\riskyvar/2
       \end{aligned}\end{gathered}\end{equation}
 
-  This tightens the impatience condition to
+  This makes the impatience condition
   \begin{equation}\begin{gathered}\begin{aligned}
-        \timeRate & \gtrsim \CRRA \pGro + \CRRA (\CRRA-1)\riskyvar/2
+        \timeRate & \gtrsim  (\CRRA-1)\left(\CRRA\riskyvar/2 - \pGro\right).
       \end{aligned}\end{gathered}\end{equation}
-and note that by reducing the required rate of return, for any given level of dividends the price must be higher than in the case where $\pGro=0$.  That makes sense: People should be more eager to own shares when dividends are rising than when they are constant.
+The effect of growth on the required rate of return therefore depends on the sign of $(\CRRA-1)$.
+If $\CRRA > 1$, positive growth increases the required rate of return and makes the impatience condition easier to satisfy.
+By increasing the required rate of return, for any given level of dividends the price must be lower than in the case where $\pGro=0$. 
+How can an asset with growing dividends be worth less than one with dividends that do not grow?
+The answer is that---because consumption must be equal to dividends---growing dividends also mean growing consumption, and an agent who knows that he will have a higher consumption in the future will be less willing to pay for further increases in this future level of consumption.
+Therefore, there are two effects in play:
+\begin{itemize}
+	\item Growth increases the future dividends, making the asset more valuable for any fixed consumption path.
+	\item Growth increases the agent's future consumption, making him less willing to pay for any stream of dividends.
+\end{itemize}
+How $\CRRA$ compares to $1$ determines which of these two effects dominates.
 
 \hypertarget{PLognormGro}{}
 All of this finally puts us in position to calculate the price from the dividend, which we can do using an updated version of \eqref{eq:PmeanOneLognorm} which incorporates growth:\footnote{Note that since $\Price_{t}$ and $\dvdnd_{t}$ and $\pGro$ and $\riskyvar$ are measurable, the formula defines a relationship between $\CRRA$ and $\timeRate$.  If we follow \cite{mehraPrescottPuzzle} in assuming that the time preference rate $\vartheta$ matches the riskfree interest rate at about 0.01, it is possible to calculate $\CRRA$ as the value that causes this equation to fit the data.}
 \begin{equation}\begin{gathered}\begin{aligned}\providecommand{\Price}{\mathsf{P}}\providecommand{\CRRA}{\rho}\providecommand{\dvdnd}{d}\providecommand{\pGro}{\gamma}\providecommand{\riskyvar}{\sigma^{2}}\providecommand{\timeRate}{\vartheta}
-  \frac{\Price_{t}}{\dvdnd_{t}^{\CRRA}} 
- & =  \left(\frac{e^{\CRRA(\pGro+(\CRRA-1)\riskyvar/2)}}{\timeRate}\right)\label{eq:PLognormGro}
-\end{aligned}\end{gathered}\end{equation}
-the log of which is\hypertarget{logprice}{}
-\begin{equation}\begin{gathered}\begin{aligned}\providecommand{\Price}{\mathsf{P}}\providecommand{\CRRA}{\rho}\providecommand{\dvdnd}{d}\providecommand{\pGro}{\gamma}\providecommand{\riskyvar}{\sigma^{2}}\providecommand{\timeRate}{\vartheta}
-  \log \Price_{t} & =  \CRRA \log \dvdnd_{t} + \CRRA(\pGro+(\CRRA-1)\riskyvar/2)- \log \timeRate 
+  \frac{\Price_{t}}{\dvdnd_{t}} 
+ & =  \frac{\DiscFac}{e^{(\CRRA-1)(\pGro - \CRRA\riskyvar/2)} - \DiscFac}\label{eq:PLognormGro}
 \end{aligned}\end{gathered}\end{equation}
 from which we can directly read off the following propositions:
 \medskip
 
-\noindent For any given $\dvdnd_{t}$, the price $\Price_{t}$ is higher when:
+\noindent For any given $\dvdnd_{t}$, if $\CRRA > 1$ and the impatience condition is satisfied, the price $\Price_{t}$ is higher when:
 \begin{enumerate}
-\item Relative risk aversion $\CRRA$ is higher
-\item Dividend growth $\pGro$ is higher
-\item The time preference rate $\timeRate$ is smaller (people are more patient)
-  \begin{itemize}
-  \item Remember that $\timeRate$ is a small number (far less than 1), so $\log \timeRate < 0$.
-    \item Decreasing it makes it a larger negative number and thus $-\log \timeRate$ becomes more positive
-    \end{itemize}
+\item Dividend growth $\pGro$ is lower
+\item The time preference rate $\timeRate$ is smaller (or $\DiscFac$ is larger, people are more patient)
 \end{enumerate}
 
 % If $\dvdnd_{t+1}/\dvdnd_{t}$ is lognormally distributed such that $\Ex_{t}[\log \dvdnd_{t+1}/\dvdnd_{t}]$ is $\riskyELev - \sigma_{\dvdnd}^{2}/2$ and variance $\riskyvar$, then \handoutM{LogELogNormTimes} tells us that
