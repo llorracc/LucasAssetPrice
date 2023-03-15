@@ -95,6 +95,14 @@ htfcss: ecss  font-family: sans-serif;
 htfcss: ecff  font-family: fantasy;
 htfcss: ecti  font-style: italic;
 htfcss: ectt  font-family: monospace,monospace;
+htfcss: ecbx  font-weight: bold;
+htfcss: ecsx  font-weight: bold;
+htfcss: ecbi  font-weight: bold;   font-style: italic;
+htfcss: ecit  font-style: italic; font-family: monospace,monospace;
+htfcss: ecss  font-family: sans-serif;
+htfcss: ecff  font-family: fantasy;
+htfcss: ecti  font-style: italic;
+htfcss: ectt  font-family: monospace,monospace;
 File: LucasAssetPrice.html
 File: LucasAssetPrice.css
 File: LucasAssetPrice.tmp
@@ -291,7 +299,7 @@ Css: td.equation { margin-top:5em; margin-bottom:5em; }
 --- needs --- LucasAssetPrice.idv[8] ==> LucasAssetPrice4x.svg ---
 --- needs --- LucasAssetPrice.idv[9] ==> LucasAssetPrice5x.svg ---
 --- needs --- LucasAssetPrice.idv[10] ==> LucasAssetPrice6x.svg ---
---- needs --- LucasAssetPrice.idv[12] ==> LucasAssetPrice7x.svg ---
+--- needs --- LucasAssetPrice.idv[11] ==> LucasAssetPrice7x.svg ---
 --- needs --- LucasAssetPrice.idv[13] ==> LucasAssetPrice8x.svg ---
 --- needs --- LucasAssetPrice.idv[14] ==> LucasAssetPrice9x.svg ---
 --- needs --- LucasAssetPrice.idv[15] ==> LucasAssetPrice10x.svg ---
@@ -351,7 +359,7 @@ Css: td.equation { margin-top:5em; margin-bottom:5em; }
 --- needs --- LucasAssetPrice.idv[89] ==> LucasAssetPrice64x.svg ---
 --- needs --- LucasAssetPrice.idv[90] ==> LucasAssetPrice65x.svg ---
 --- needs --- LucasAssetPrice.idv[91] ==> LucasAssetPrice66x.svg ---
---- needs --- LucasAssetPrice.idv[93] ==> LucasAssetPrice67x.svg ---
+--- needs --- LucasAssetPrice.idv[92] ==> LucasAssetPrice67x.svg ---
 --- needs --- LucasAssetPrice.idv[94] ==> LucasAssetPrice68x.svg ---
 --- needs --- LucasAssetPrice.idv[95] ==> LucasAssetPrice69x.svg ---
 --- needs --- LucasAssetPrice.idv[96] ==> LucasAssetPrice70x.svg ---
@@ -461,6 +469,7 @@ Font("ecrm","0600","6","100")
 Font("tcrm","0500","5","100")
 Font("ecrm","1440","14","100")
 Font("ecrm","2074","20","100")
+Font("ecrm","1095","10","100")
 Font("ecrm","1728","17","100")
 Font("ectt","1440","14","100")
 Font("ecrm","1000","10","100")
